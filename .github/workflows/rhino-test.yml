@@ -11,6 +11,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Setup system dependencies
+        run: >
+          sudo apt-get install --yes
+          libgdal-dev
+          libproj-dev
+          libudunits2-dev
+
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
         with:
