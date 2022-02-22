@@ -6,14 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq \
   && apt-get install --yes \
     curl \
-    gdal-bin \
     libgdal-dev \
-    libgeos-dev \
-    libpq-dev \
     libproj-dev \
     libudunits2-dev \
-    proj-bin \
-    proj-data \
   && rm -rf /var/lib/apt/lists/*
 
 # Remove examples
