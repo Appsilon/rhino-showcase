@@ -76,7 +76,7 @@ server <- function(id, map_data, medal_data, event_podium, year) {
           )
         ) %>%
         onRender(
-          JS("function(el, x) {var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}")
+          JS("function(el, x) {var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}") # nolint
         ) %>%
         addLegend("bottomleft",
           layerId = "legend_np",
