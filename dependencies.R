@@ -1,12 +1,22 @@
 # This file allows packrat (used by rsconnect during deployment) to pick up dependencies.
 
-# Development
-library(lintr)
-library(yaml) # Used to load config for lintr.
-library(testthat)
-
 # Production
+library(base64enc)
 library(box)
+library(countrycode)
+library(data.table)
+library(dplyr)
+library(fst)
+library(glue)
+library(htmlwidgets)
+library(leaflet)
 library(logger)
-library(shiny)
+library(magrittr)
+library(plotly)
+library(purrr)
 library(rhino)
+library(sf)
+library(shiny)
+library(shiny.semantic)
+library(stringr)
+library(waiter)
