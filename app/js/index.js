@@ -1,4 +1,4 @@
-import HTMLWidgets from 'HTMLWidgets';
+/* global HTMLWidgets */
 
 function ensureArray(x) {
   if (!(typeof (x) === 'object' && x.length)) {
