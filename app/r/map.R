@@ -10,7 +10,7 @@ box::use(
 )
 
 box::use(
-  modules/update_map[...]
+  r/update_map[...]
 )
 
 #' @export

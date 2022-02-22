@@ -10,7 +10,7 @@ box::use(
 )
 
 box::use(
-  modules/utils[customize_axes, update_podium_flags, reset_podium_flags, add_podium_bar]
+  r/utils[customize_axes, update_podium_flags, reset_podium_flags, add_podium_bar]
 )
 
 #' @export

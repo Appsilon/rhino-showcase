@@ -10,7 +10,7 @@ box::use(
 )
 
 box::use(
-  modules/leaflet_proxy_helpers[...]
+  r/leaflet_proxy_helpers[...]
 )
 
 #' @export

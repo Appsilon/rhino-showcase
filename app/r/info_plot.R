@@ -7,7 +7,7 @@ box::use(
 )
 
 box::use(
-  modules/utils[add_medal_trace, customize_axes, make_flag_data]
+  r/utils[add_medal_trace, customize_axes, make_flag_data]
 )
 
 #' @export

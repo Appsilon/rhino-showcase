@@ -6,7 +6,7 @@ box::use(
 )
 
 box::use(
-  modules/utils[make_dropdown]
+  r/utils[make_dropdown]
 )
 
 #' @export
