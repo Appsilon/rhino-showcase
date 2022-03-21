@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       R_VERSION: '4.1.0'
-      GITHUB_PAT: ${{ secrets.RHINO_PAT }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
