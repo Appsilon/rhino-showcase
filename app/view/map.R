@@ -1,10 +1,12 @@
 box::use(
   leaflet,
   shiny, shiny[isolate, tagList, tags],
+  shiny.stats,
 )
 box::use(
   app/logic/data,
   app/logic/shiny[event_reactive_val],
+  app/logic/stats,
 )
 
 #' @export
@@ -25,5 +27,8 @@ server <- function(id) {
     output$map <- leaflet$renderLeaflet({
       data$random_points(size()) |> data$map()
     })
+
+    shiny.stats$log_input(stats$connection(), input, "size")
+    shiny.stats$log_button(stats$connection(), input, "generate")
   })
 }
