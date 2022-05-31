@@ -3,3 +3,10 @@ library(odbc)
 library(rhino)
 library(RSQLite)
 library(shiny.stats)
+
+# Stats app
+library(DT)
+library(plotly)
+library(semantic.dashboard)
+library(shinyjs)
+library(timevis)
