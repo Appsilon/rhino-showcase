@@ -5,14 +5,19 @@ box::use(
 #' @export
 ui <- function(id) {
   ns <- shiny$NS(id)
-  tags$h3(
-    shiny$textOutput(ns("message"))
-  )
+  shiny$actionButton(ns("hello"), "Say Hello")
 }
 
 #' @export
 server <- function(id) {
   shiny$moduleServer(id, function(input, output, session) {
-    output$message <- shiny$renderText("Modal")
+    shiny$observeEvent(input$hello, {
+      shiny$showModal(hello_modal)
+    })
   })
 }
+
+hello_modal <- shiny$modalDialog(
+  title = "Hello!",
+  "Nice to meet you."
+)
