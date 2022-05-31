@@ -1118,6 +1118,18 @@
         "xtable"
       ]
     },
+    "shiny.router": {
+      "Package": "shiny.router",
+      "Version": "0.2.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "999bf53e9c42bf4329c276c571277345",
+      "Requirements": [
+        "htmltools",
+        "magrittr",
+        "shiny"
+      ]
+    },
     "shiny.semantic": {
       "Package": "shiny.semantic",
       "Version": "0.4.3",

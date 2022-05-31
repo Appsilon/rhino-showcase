@@ -2,6 +2,7 @@
 library(odbc)
 library(rhino)
 library(RSQLite)
+library(shiny.router)
 library(shiny.stats)
 
 # Stats app
