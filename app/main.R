@@ -1,7 +1,6 @@
 box::use(
   shiny, shiny[tags],
   shiny.router[make_router, route, route_link],
-  shiny.stats,
 )
 box::use(
   app/logic/stats,
@@ -26,9 +25,6 @@ ui <- shiny$bootstrapPage(
 
 #' @export
 server <- function(input, output, session) {
+  stats$initialize()
   router$server(input, output, session)
-
-  stats_connection <- stats$connect()
-  shiny.stats$log_login(stats_connection)
-  shiny.stats$log_logout(stats_connection)
 }

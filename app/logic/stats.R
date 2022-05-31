@@ -1,20 +1,32 @@
 box::use(
   odbc,
   RSQLite,
+  shiny,
   shiny.stats,
 )
 
 #' @export
 db_credentials <- list(
-  DB_NAME = "stats.sqlite",
-  DB_DRIVER = "SQLite"
+  DB_DRIVER = "SQLite",
+  DB_NAME = "stats.sqlite"
 )
 
 #' @export
-get_user <- function(session = getDefaultReactiveDomain()) "test"
+user <- function(session = shiny$getDefaultReactiveDomain()) {
+  "test"
+}
 
 #' @export
-connect <- function() {
-  odbc$dbConnect(RSQLite$SQLite(), dbname = db_credentials$DB_NAME) |>
-    shiny.stats$initialize_connection(username = get_user())
+connection <- function(session = shiny$getDefaultReactiveDomain()) {
+  session$userData$stats_connection
+}
+
+#' @export
+initialize <- function(session = shiny$getDefaultReactiveDomain()) {
+  connection <-
+    odbc$dbConnect(RSQLite$SQLite(), dbname = db_credentials$DB_NAME) |>
+    shiny.stats$initialize_connection(username = user(session))
+  shiny.stats$log_login(connection)
+  shiny.stats$log_logout(connection)
+  session$userData$stats_connection <- connection
 }
