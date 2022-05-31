@@ -28,5 +28,6 @@ initialize <- function(session = shiny$getDefaultReactiveDomain()) {
     shiny.stats$initialize_connection(username = user(session))
   shiny.stats$log_login(connection)
   shiny.stats$log_logout(connection)
+  shiny$observe(shiny.stats$log_browser_version(session$input, connection))
   session$userData$stats_connection <- connection
 }

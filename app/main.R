@@ -1,6 +1,7 @@
 box::use(
   shiny, shiny[tags],
   shiny.router[make_router, route, route_link],
+  shiny.stats,
 )
 box::use(
   app/logic/stats,
@@ -19,6 +20,7 @@ router <- make_router(
 
 #' @export
 ui <- shiny$bootstrapPage(
+  shiny.stats$browser_info_js,
   menu,
   router$ui
 )
