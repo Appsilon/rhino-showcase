@@ -7,8 +7,7 @@ and a place for code/configuration which is not used often enough to be added to
 This is an application built in [Shiny](https://shiny.rstudio.com/).
 To run it, make sure you have R (>= 4.0.0) installed.
 For JavaScript and Sass development you'll also need
-[Node.js](https://nodejs.org/en/download/) (>= 16.0.0)
-and [yarn](https://classic.yarnpkg.com/en/docs/install) (>= 1.22.0).
+[Node.js](https://nodejs.org/en/download/) (>= 16.0.0).
 
 ## Dependencies
 Run `renv::restore(clean = TRUE)` to synchronize the project library with the lockfile
