@@ -22,6 +22,8 @@ RUN sudo -u shiny Rscript -e 'renv::restore(clean = TRUE)'
 
 # Copy app
 COPY --chown=shiny:shiny app.R ./
+COPY --chown=shiny:shiny config.yml ./
+COPY --chown=shiny:shiny rhino.yml ./
 COPY --chown=shiny:shiny app app/
 
 COPY --chown=shiny:shiny docker/shiny-server.conf /etc/shiny-server/
