@@ -6,24 +6,19 @@ box::use(
   waiter[use_waiter],
 )
 box::use(
-  r/dropdowns,
-  r/info_plot,
-  r/info_text,
-  r/map,
-  r/podium,
-  r/timeline,
-  r/utils[loading_screen],
+  app/r/dropdowns,
+  app/r/info_plot,
+  app/r/info_text,
+  app/r/map,
+  app/r/podium,
+  app/r/timeline,
+  app/r/utils[loading_screen],
 )
 
 #' @export
 ui <- function(id) {
   ns <- NS(id)
   semanticPage(
-    tags$head(
-      tags$link(rel = "icon", href = "static/favicon.ico", sizes = "any"),
-      tags$link(rel = "stylesheet", type = "text/css", href = "static/css/app.min.css"),
-      tags$script(src = "static/js/app.min.js")
-    ),
     use_waiter(),
     loading_screen("Citius, Altius, Fortius"),
     title = "Olympics History Map",
