@@ -1001,10 +1001,10 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.2.1",
+      "Version": "1.2.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "04df0885e4e4f8f62c1c138109ac51ae",
+      "Hash": "b88eea59a51f492c8ef62129f237830c",
       "Requirements": [
         "box",
         "cli",
