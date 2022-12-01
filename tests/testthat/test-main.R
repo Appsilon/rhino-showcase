@@ -3,5 +3,5 @@ box::use(
   testthat[...],
 )
 box::use(
-  r/main[...],
+  app/main[...],
 )

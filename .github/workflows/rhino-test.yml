@@ -1,26 +1,32 @@
 name: Rhino Test
 on: push
+permissions:
+  contents: read
 jobs:
   main:
     name: Run linters and tests
     runs-on: ubuntu-20.04
     env:
-      R_VERSION: '4.1.0'
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Extract R version from lockfile
+        run: printf 'R_VERSION=%s\n' "$(jq --raw-output .R.Version renv.lock)" >> $GITHUB_ENV
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ env.R_VERSION }}
+
       - name: Setup system dependencies
         run: >
-          sudo apt-get install --yes
+          sudo apt-get update && sudo apt-get install --yes
+          libcurl4-openssl-dev
           libgdal-dev
           libproj-dev
           libudunits2-dev
-
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v1
-        with:
-          r-version: ${{ env.R_VERSION }}
 
       - name: Restore renv from cache
         uses: actions/cache@v2
@@ -57,6 +63,16 @@ jobs:
         shell: Rscript {0}
         run: rhino::lint_sass()
 
+      - name: Build JavaScript
+        if: always()
+        shell: Rscript {0}
+        run: rhino::build_js()
+
+      - name: Build Sass
+        if: always()
+        shell: Rscript {0}
+        run: rhino::build_sass()
+
       - name: Run R unit tests
         if: always()
         shell: Rscript {0}
@@ -66,6 +82,6 @@ jobs:
         if: always()
         uses: cypress-io/github-action@v2
         with:
-          working-directory: .rhino/node # Created by earlier commands which use Node.js
-          start: yarn run-app
-          project: root/tests
+          working-directory: .rhino # Created by earlier commands which use Node.js
+          start: npm run run-app
+          project: ../tests

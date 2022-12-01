@@ -6,7 +6,7 @@ box::use(
 )
 
 box::use(
-  r/utils[make_dropdown]
+  app/r/utils[make_dropdown]
 )
 
 #' @export
