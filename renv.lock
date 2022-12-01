@@ -847,10 +847,10 @@
     },
     "plotly": {
       "Package": "plotly",
-      "Version": "4.10.1",
+      "Version": "4.9.4.1",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "3781cf6971c6467fa842a63725bbee9e",
+      "Repository": "RSPM",
+      "Hash": "af4b92cb3828aa30002e2f945c49c2d7",
       "Requirements": [
         "RColorBrewer",
         "base64enc",
