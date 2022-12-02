@@ -6,13 +6,13 @@ box::use(
   waiter[use_waiter],
 )
 box::use(
-  app/r/dropdowns,
-  app/r/info_plot,
-  app/r/info_text,
-  app/r/map,
-  app/r/podium,
-  app/r/timeline,
-  app/r/utils[loading_screen],
+  app/view/dropdowns,
+  app/view/info_plot,
+  app/view/info_text,
+  app/view/map,
+  app/view/podium,
+  app/view/timeline,
+  app/logic/utils[loading_screen],
 )
 
 #' @export

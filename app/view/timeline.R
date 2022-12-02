@@ -11,7 +11,7 @@ box::use(
 )
 
 box::use(
-  app/r/utils[customize_axes, update_timeline_colors]
+  app/logic/utils[customize_axes, update_timeline_colors]
 )
 
 #' @export
