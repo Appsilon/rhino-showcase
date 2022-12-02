@@ -847,10 +847,10 @@
     },
     "plotly": {
       "Package": "plotly",
-      "Version": "4.9.4.1",
+      "Version": "4.10.1",
       "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "af4b92cb3828aa30002e2f945c49c2d7",
+      "Repository": "CRAN",
+      "Hash": "3781cf6971c6467fa842a63725bbee9e",
       "Requirements": [
         "RColorBrewer",
         "base64enc",
@@ -877,10 +877,10 @@
     },
     "png": {
       "Package": "png",
-      "Version": "0.1-7",
+      "Version": "0.1-8",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "03b7076c234cb3331288919983326c55",
+      "Hash": "bd54ba8a0a5faded999a7aab6e46b374",
       "Requirements": []
     },
     "praise": {
@@ -953,10 +953,10 @@
     },
     "raster": {
       "Package": "raster",
-      "Version": "3.6-3",
+      "Version": "3.6-11",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "d550f9d6dbb4dce7cbd146b09d663343",
+      "Hash": "48f95b0f7e708aa96c8913cadf12eb79",
       "Requirements": [
         "Rcpp",
         "sp",
@@ -1001,10 +1001,10 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.2.0",
+      "Version": "1.2.1",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "b88eea59a51f492c8ef62129f237830c",
+      "Repository": "RSPM",
+      "Hash": "04df0885e4e4f8f62c1c138109ac51ae",
       "Requirements": [
         "box",
         "cli",
@@ -1216,10 +1216,10 @@
     },
     "terra": {
       "Package": "terra",
-      "Version": "1.6-17",
+      "Version": "1.6-41",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3e264754dde87261bc7ccdb30d29d3b4",
+      "Hash": "273302c394cb69074118e885a47a036f",
       "Requirements": [
         "Rcpp"
       ]
