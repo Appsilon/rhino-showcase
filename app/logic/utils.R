@@ -3,7 +3,6 @@ box::use(
   shiny[img, div, br, tagList],
   shiny.semantic[dropdown_input],
   glue[glue],
-  htmlwidgets[onRender],
   plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
   magrittr[`%>%`],
   dplyr[n, select, mutate],
@@ -57,8 +56,7 @@ customize_axes <- function(p) {
       xaxis = list(visible = FALSE, fixedrange = TRUE),
       yaxis = list(visible = FALSE, fixedrange = TRUE)
     ) %>%
-    config(displayModeBar = FALSE) %>%
-    onRender("function(el, x) {Plotly.d3.select('.cursor-crosshair').style('cursor', 'pointer')}")
+    config(displayModeBar = FALSE)
 }
 
 #' @export
