@@ -7,7 +7,7 @@ box::use(
 )
 
 box::use(
-  app/r/utils[add_medal_trace, customize_axes, make_flag_data]
+  app/logic/utils[add_medal_trace, customize_axes, make_flag_data]
 )
 
 #' @export

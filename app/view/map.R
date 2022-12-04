@@ -10,7 +10,7 @@ box::use(
 )
 
 box::use(
-  app/r/update_map[...]
+  app/logic/update_map[...]
 )
 
 #' @export
