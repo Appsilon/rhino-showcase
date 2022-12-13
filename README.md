@@ -1,5 +1,7 @@
 # Rhino Showcase - Olympic History Map
 This app is built with [Rhino](https://github.com/Appsilon/rhino).
+You can see a deployed version here: 
+[Rhino Showcase Demo](https://demo.prod.appsilon.ai/rhino-showcase-olympic-history-map/).
 It is meant to be a showcase of the its features
 and a place for code/configuration which is not used often enough to be added to the package itself.
 
