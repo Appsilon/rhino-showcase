@@ -1,4 +1,5 @@
 box::use(
+  checkmate[assert_string],
   waiter[waiter_preloader],
   shiny[img, div, br, tagList],
   shiny.semantic[dropdown_input],
@@ -11,8 +12,8 @@ box::use(
 
 #' @export
 loading_screen <- function(text = "Loading...", bkg_color = "white") {
-  stopifnot(is.character(text))
-  stopifnot(is.character(bkg_color))
+  assert_string(text, min.chars = 1)
+  assert_string(bkg_color, min.chars = 1)
 
   waiter_preloader(
     html = tagList(
