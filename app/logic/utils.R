@@ -10,6 +10,7 @@ box::use(
   purrr[map, pmap]
 )
 
+#' @export
 loading_screen <- function(text = "Loading...", bkg_color = "white") {
   assert_string(text, min.chars = 1)
   assert_string(bkg_color, min.chars = 1)
@@ -23,6 +24,7 @@ loading_screen <- function(text = "Loading...", bkg_color = "white") {
   )
 }
 
+#' @export
 make_dropdown <- function(input_id, text, choices) {
   assert_string(input_id, min.chars = 1)
   assert_string(text, min.chars = 1)
