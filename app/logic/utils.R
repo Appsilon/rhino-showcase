@@ -1,4 +1,5 @@
 box::use(
+  checkmate[assert_string, assert_vector],
   waiter[waiter_preloader],
   shiny[img, div, br, tagList],
   shiny.semantic[dropdown_input],
@@ -11,8 +12,8 @@ box::use(
 
 #' @export
 loading_screen <- function(text = "Loading...", bkg_color = "white") {
-  stopifnot(is.character(text))
-  stopifnot(is.character(bkg_color))
+  assert_string(text, min.chars = 1)
+  assert_string(bkg_color, min.chars = 1)
 
   waiter_preloader(
     html = tagList(
@@ -25,6 +26,19 @@ loading_screen <- function(text = "Loading...", bkg_color = "white") {
 
 #' @export
 make_dropdown <- function(input_id, text, choices) {
+  assert_string(input_id, min.chars = 1)
+  assert_string(text, min.chars = 1)
+  assert_vector(
+    x = choices,
+    strict = TRUE,
+    all.missing = FALSE,
+    min.len = 1,
+    unique = TRUE,
+    null.ok = TRUE
+    # `null.ok = FALSE` breaks the app, but there's no docs so it's hard to
+    # understand if accepting NULL is desired behaviour or some missing req()
+  )
+
   div(
     class = "column",
     dropdown_input(
