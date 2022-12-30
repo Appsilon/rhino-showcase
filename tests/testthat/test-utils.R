@@ -1,5 +1,3 @@
-options(box.path = getwd())
-
 box::use(
   shiny[testServer],
   checkmate[...],
@@ -26,6 +24,8 @@ test_that("loading_screen: invalid param 'text' is handled", {
   wrong_params <- c("", 123, NA, NaN, Inf, NULL)
   expect_error(loading_screen(text = wrong_params, bkg_color = "white"))
   expect_error(loading_screen(text = "", bkg_color = "white"))
+  expect_error(loading_screen(text = c("white", "red"), bkg_color = "white"))
+  expect_error(loading_screen(text = 123, bkg_color = "white"))
   expect_error(loading_screen(text = NA, bkg_color = "white"))
   expect_error(loading_screen(text = NaN, bkg_color = "white"))
   expect_error(loading_screen(text = NULL, bkg_color = "white"))
@@ -36,6 +36,8 @@ test_that("loading_screen: invalid param 'bkg_color' is handled", {
   wrong_params <- c("", 123, NA, NaN, Inf, NULL)
   expect_error(loading_screen(text = "Loading...", bkg_color = wrong_params))
   expect_error(loading_screen(text = "Loading...", bkg_color = ""))
+  expect_error(loading_screen(text = "Loading...", bkg_color = c("white", "red")))
+  expect_error(loading_screen(text = "Loading...", bkg_color = NA))
   expect_error(loading_screen(text = "Loading...", bkg_color = NA))
   expect_error(loading_screen(text = "Loading...", bkg_color = NaN))
   expect_error(loading_screen(text = "Loading...", bkg_color = NULL))
