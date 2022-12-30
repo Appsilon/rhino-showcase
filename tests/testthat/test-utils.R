@@ -1,7 +1,14 @@
 box::use(
   shiny[testServer],
-  checkmate[...],
   testthat[...],
+  waiter[waiter_preloader],
+  shiny[img, div, br, tagList],
+  shiny.semantic[dropdown_input],
+  glue[glue],
+  plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
+  magrittr[`%>%`],
+  dplyr[n, select, mutate],
+  purrr[map, pmap]
 )
 
 box::use(
@@ -42,6 +49,20 @@ test_that("loading_screen: invalid param 'bkg_color' is handled", {
   expect_error(loading_screen(text = "Loading...", bkg_color = NaN))
   expect_error(loading_screen(text = "Loading...", bkg_color = NULL))
   expect_error(loading_screen(text = "Loading...", bkg_color = Inf))
+})
+
+test_that("loading_screen: returns expected outcome", {
+  example_preloader <- waiter_preloader(
+    html = tagList(
+      img(src = "static/logo.png", width = "350"),
+      div(class = "load-text", "Loading...")
+    ),
+    color = "white"
+  )
+
+  expect_equal(
+    loading_screen(text = "Loading...", bkg_color = "white"), example_preloader
+  )
 })
 
 # make_dropdown
