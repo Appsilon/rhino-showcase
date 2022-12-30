@@ -1,5 +1,5 @@
 box::use(
-  checkmate[assert_string],
+  checkmate[assert_string, assert_vector],
   waiter[waiter_preloader],
   shiny[img, div, br, tagList],
   shiny.semantic[dropdown_input],
@@ -10,6 +10,12 @@ box::use(
   purrr[map, pmap]
 )
 
+# TODO finish the loading_screen docs
+#' Title
+#' @param text
+#' @param bkg_color
+#' @returns
+#'
 #' @export
 loading_screen <- function(text = "Loading...", bkg_color = "white") {
   assert_string(text, min.chars = 1)
@@ -24,8 +30,25 @@ loading_screen <- function(text = "Loading...", bkg_color = "white") {
   )
 }
 
+# TODO finish the make_dropdown docs
+#' Title
+#' @param input_id
+#' @param text
+#' @param choices
+#' @returns
+#'
 #' @export
 make_dropdown <- function(input_id, text, choices) {
+  assert_string(input_id, min.chars = 1)
+  assert_string(text, min.chars = 1)
+  assert_vector(
+    x           = choices,
+    strict      = TRUE,
+    all.missing = FALSE,
+    min.len     = 1,
+    unique      = TRUE
+  )
+
   div(
     class = "column",
     dropdown_input(
