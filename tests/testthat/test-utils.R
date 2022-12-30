@@ -85,7 +85,6 @@ test_that("make_dropdown: invalid param 'text' is handled", {
 test_that("make_dropdown: invalid param 'choices' is handled", {
   expect_error(make_dropdown(input_id = "input_a", text = "Choose a letter:", choices = NA))
   expect_error(make_dropdown(input_id = "input_a", text = "Choose a letter:", choices = NaN))
-  expect_error(make_dropdown(input_id = "input_a", text = "Choose a letter:", choices = NULL))
   expect_error(make_dropdown(input_id = "input_a", text = "Choose a letter:", choices = c(NA, NA))) # nolint
   expect_error(make_dropdown(input_id = "input_a", text = "Choose a letter:", choices = c("A", "A"))) #nolint
 })

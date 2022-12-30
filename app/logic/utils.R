@@ -46,7 +46,11 @@ make_dropdown <- function(input_id, text, choices) {
     strict      = TRUE,
     all.missing = FALSE,
     min.len     = 1,
-    unique      = TRUE
+    unique      = TRUE,
+    null.ok     = TRUE
+    # TODO investigate if null.ok should be accepted
+    # `null.ok = FALSE` breaks the app, but there's no docs so it's hard to understand  # nolint
+    # if accepting NULL is desired behaviour or some missing req()
   )
 
   div(
