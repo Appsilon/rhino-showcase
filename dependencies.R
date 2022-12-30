@@ -3,6 +3,7 @@
 # Production
 library(base64enc)
 library(box)
+library(checkmate)
 library(countrycode)
 library(data.table)
 library(dplyr)
@@ -20,4 +21,3 @@ library(shiny)
 library(shiny.semantic)
 library(stringr)
 library(waiter)
-library(checkmate)
