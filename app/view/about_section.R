@@ -4,9 +4,12 @@ box::use(
     button,
     card,
     cards,
+    create_modal,
     header,
     icon,
+    modal,
     segment,
+    show_modal,
   ],
 )
 
@@ -26,7 +29,18 @@ ui <- function(id) {
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
     observeEvent(input$about_button, {
-      print("Hi You are here !!!")
+      print("I am here")
+      create_modal(
+        modal(
+          id = "about_modal",
+          title = "About Section",
+          header = "About Section",
+          content = div(
+            h1("This modal will close after 3 sec.")
+          ),
+          footer = "Developed with  💕 by Appsilon"
+        )
+      )
     })
   })
 }
