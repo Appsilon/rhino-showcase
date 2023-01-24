@@ -49,3 +49,9 @@ window.LeafletWidget.methods.setPopup = function setPopup(category, layerId, pop
     }
   });
 };
+
+$(document).ready(() => {
+  $('#app-info_text-about_section-about_button').click( () => {
+    Shiny.setInputValue('app-info_text-about_section-about_button', 'active', { priority: 'event'})
+  })
+})

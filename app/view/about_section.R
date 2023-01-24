@@ -25,5 +25,8 @@ ui <- function(id) {
 #' @export
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
+    observeEvent(input$about_button, {
+      print("Hi You are here !!!")
+    })
   })
 }
