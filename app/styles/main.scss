@@ -9,3 +9,12 @@
 .textpoint text {
   font-size: calc(4px + (16 - 4) * ((100vw - 300px) / (2400 - 300))) !important;
 }
+
+.title_section{
+  display: flex;
+  justify-content: space-between;
+
+  i{
+    color: royalblue;
+  }
+}

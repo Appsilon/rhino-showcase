@@ -5,12 +5,22 @@ box::use(
   magrittr[`%>%`]
 )
 
+box::use(
+  app/view/about_section,
+)
 #' @export
 ui <- function(id) {
   ns <- NS(id)
 
   list(
-    segment(class = "raised", h2(style = "text-align: center;", textOutput(ns("info_title")))),
+    segment(
+      class = "raised title_section",
+      h3(
+        style = "text-align: left;",
+        textOutput(ns("info_title"))
+      ),
+    about_section$ui(ns("about_section"))
+    ),
     div(class = "ui divider"),
     div(class = "ui container", htmlOutput(ns("game_info")))
   )
@@ -22,6 +32,9 @@ server <- function(id, year, game_data) {
   stopifnot(is.data.frame(game_data))
 
   moduleServer(id, function(input, output, session) {
+
+    about_section$server("about_section")
+
     observeEvent(year(), {
       this_game_data <- game_data %>%
         dplyr::filter(Year == year())
