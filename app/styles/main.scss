@@ -10,16 +10,16 @@
   font-size: calc(4px + (16 - 4) * ((100vw - 300px) / (2400 - 300))) !important;
 }
 
-.title_section{
+.title_section {
   display: flex;
   justify-content: space-between;
 
-  i{
+  i {
     color: #fc6;
   }
 }
 
-.section_header{
+.section_header {
   font-size: 1.2rem;
   line-height: 1rem;
   font-weight: 600;
