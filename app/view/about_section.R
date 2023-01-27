@@ -18,9 +18,17 @@ ui <- function(id) {
   ns <- NS(id)
 
   tagList(
-    tags$i(
-      id = ns("about_button"),
-      class = "info circle icon large"
+    div(
+      div(
+      tags$i(
+          id = ns("about_button"),
+          class = "info circle icon large"
+        )
+      ),
+      div(
+        class = "about_label",
+        "About"
+      )
     )
   )
 }
