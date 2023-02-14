@@ -52,7 +52,6 @@ server <- function(id) {
     timeline_data <- read_fst("app/data/timeline_data.fst", as.data.table = TRUE)
     sports_by_year <- read_fst("app/data/sports_by_year.fst", as.data.table = TRUE)
     map_data <- st_read(dsn = "app/data/map_data.shp", quiet = TRUE)
-
     year <- timeline$server("timeline", timeline_data)
     event_sport <- dropdowns$server("dropdowns", sports_by_year, year)
     event_podium <- podium$server("podium", events_data, year, event_sport)
