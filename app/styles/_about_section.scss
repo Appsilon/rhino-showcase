@@ -27,27 +27,20 @@ html {
   font-family: "Maven Pro", sans-serif;
   text-align: justify;
   font-style: normal;
-}
+  width: 100%;
 
-@media only screen and (max-width: 767px) {
-  .modal-dialog {
-    width: 80vw;
+  @media only screen and (max-width: 767px) {
     font-size: 12px;
   }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .modal-dialog {
-    width: 70vw;
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     font-size: 14px;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .modal-dialog {
-    width: 55vw;
+  @media only screen and (min-width: 1024px) {
     font-size: 16px;
   }
+
 }
 
 .modal-title {
@@ -236,7 +229,7 @@ html {
       flex-grow: 0;
       margin-top: auto;
 
-      & a:link {
+      &:link {
         text-decoration: none;
         color: $dark-blue;
       }

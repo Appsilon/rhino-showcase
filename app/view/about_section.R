@@ -60,14 +60,12 @@ card <- function(href_link,
       class = "card-content",
       card_text
     ),
-    div(
+    a(
       class = "card-footer",
-      a(
-        href = href_link,
-        target = "_blank",
-        rel = "noopener noreferrer",
-        "Learn more"
-      )
+      href = href_link,
+      target = "_blank",
+      rel = "noopener noreferrer",
+      "Learn more"
     )
   )
 }
@@ -124,6 +122,7 @@ ui <- function(id) {
   tagList(
     div(
       id = "info",
+      class = "info",
       shiny::icon("info-circle")
     ),
     tags$script(
@@ -145,8 +144,6 @@ server <- function(id) {
     ns <- session$ns
 
     observeEvent(input$open_modal, {
-
-      print("I am here")
 
       create_modal(
         modal(
