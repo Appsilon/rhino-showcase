@@ -144,44 +144,37 @@ server <- function(id) {
     ns <- session$ns
 
     observeEvent(input$open_modal, {
-
       create_modal(
         modal(
           id = "main_about_page",
+          header = "Olympic Games",
           div(
             class = "modal-dialog",
-            div(
-              class = "modal-title",
-              "Racial Diversity (USA)"
-            ),
             div(
               class = "about-section",
               topic_section(
                 header = "About the project",
-                description = "This Shiny app demonstrates the power of Fluent UI
-              in Shiny for a clean design and interactive data analysis. Explore
-              reactive elements and see fast data visualization responses."
+                description = "This dashboard showcases the possibilities of Rhino
+              package when used with sass, js and shiny.semantic ui."
               ),
               topic_section(
                 header = "Dataset Info",
-                description = "This dataset summarises US census data based on
-              racial diversity present in US. To get more info on the data
-              visit the below links:"
+                description = "This dataset summarises Olympic Medals by country
+                name, region, year and ranking etc... If you want to dive deeper
+                into the dataset please visit the links below."
               ),
               div(
                 class = "about-tag",
                 tag(
-                  tag_string = "US census data",
+                  tag_string = "kaggle dataset",
                   hyperlink = paste0(
-                    "https://data.census.gov/table?q=",
-                    "population+race",
-                    "&tid=",
-                    "ACSST1Y2019.S0601"
+                    "https://www.kaggle.com/datasets/heesoo37/",
+                    "120-years-of-olympic-history-athletes-and-results"
                   )
                 ),
                 tag(
-                  tag_string = "US census website",
-                  hyperlink = "https://data.census.gov/"
+                  tag_string = "olympic website",
+                  hyperlink = "https://olympics.com/en/sports/"
                 )
               ),
               hr(),
