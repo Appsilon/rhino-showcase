@@ -18,14 +18,13 @@ html {
   background: transparent;
 }
 
-
 .ms-Modal.is-open.root-192 {
-  top: 3rem
+  top: 3rem;
 }
 
-#main_about_page > .header {
-    padding: 1rem 3em;
-    font-size: 1.6rem;
+#main_about_page>.header {
+  padding: 1rem 3em;
+  font-size: 1.6rem;
 }
 
 .modal-dialog {
@@ -45,7 +44,6 @@ html {
   @media only screen and (min-width: 1024px) {
     font-size: 16px;
   }
-
 }
 
 .modal-title {
