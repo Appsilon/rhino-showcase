@@ -107,7 +107,7 @@ appsilon <- function() {
       for enterprise customers all over the world. Appsilon
       provides scalability, security, and modern UI/UX with
       custom R packages that native Shiny apps do not provide.
-      Our team is among the worldâs foremost experts in R Shiny
+      Our team is among the world's foremost experts in R Shiny
       and has made a variety of Shiny innovations over the
       years. Appsilon is a proud Posit Full Service
       Certified Partner."
