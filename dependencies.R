@@ -21,3 +21,5 @@ library(shiny)
 library(shiny.semantic)
 library(stringr)
 library(waiter)
+
+library(shiny.telemetry)
