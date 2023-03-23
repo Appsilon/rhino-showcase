@@ -14,6 +14,10 @@ box::use(
   app/logic/utils[customize_axes, update_timeline_colors]
 )
 
+box::use(
+  shiny.telemetry[log_custom_action],
+)
+
 #' @export
 ui <- function(id) {
   ns <- NS(id)
@@ -85,6 +89,15 @@ server <- function(id, timeline_data) {
     })
 
     observeEvent(year_selected(), {
+      log_custom_action(
+        session$userData$data_storage,
+        values = list(
+          action = "input",
+          id = "timeline",
+          value = year_selected()
+        )
+      )
+
       overall_ix(FALSE)
       marker_colors <- timeline_data %>%
         mutate(color = ifelse(Year == year_selected(), selected_color, unselected_color)) %>%

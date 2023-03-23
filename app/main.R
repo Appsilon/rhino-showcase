@@ -15,6 +15,13 @@ box::use(
   app/logic/utils[loading_screen],
 )
 
+box::use(
+  shiny.telemetry[
+    log_input, log_login, log_logout, DataStorageRSQLite, log_button,
+    log_browser_version, browser_info_js,
+  ]
+)
+
 #' @export
 ui <- function(id) {
   ns <- NS(id)
@@ -22,6 +29,9 @@ ui <- function(id) {
     use_waiter(),
     loading_screen("Citius, Altius, Fortius"),
     title = "Olympics History Map",
+    tags$head(
+      browser_info_js(id)
+    ),
     grid(
       grid_template(default = list(
         areas = rbind(
@@ -46,6 +56,21 @@ ui <- function(id) {
 #' @export
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
+
+    data_storage <- DataStorageRSQLite$new(
+      username = "public_user",
+      db_path = file.path(options()$box.path, "user_stats.sqlite")
+    )
+
+    session$userData$data_storage <- data_storage
+
+    # registering login
+    log_login(data_storage)
+    log_browser_version(data_storage, input)
+
+    log_input(data_storage, input, input_id = "dropdowns-Sport")
+    log_input(data_storage, input, input_id = "dropdowns-Event")
+
     game_data <- read_fst("app/data/game_data.fst", as.data.table = TRUE)
     medal_data <- read_fst("app/data/medal_data.fst", as.data.table = TRUE)
     events_data <- read_fst("app/data/events_data.fst", as.data.table = TRUE)
