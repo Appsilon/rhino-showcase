@@ -1,7 +1,7 @@
 {
   "version": 1,
   "locale": "en_US",
-  "platform": "4.2.2",
+  "platform": "4.3.0",
   "metadata": {
     "appmode": "shiny",
     "primary_rmd": null,
@@ -39,7 +39,7 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "RSPM",
         "Date/Publication": "2022-06-18 07:10:15 UTC",
-        "Built": "R 4.2.0; ; 2022-06-20 11:37:05 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-21 21:44:55 UTC; unix"
       }
     },
     "KernSmooth": {
@@ -63,10 +63,8 @@
         "Author": "Matt Wand [aut],\n  Cleve Moler [ctb] (LINPACK routines in src/d*),\n  Brian Ripley [trl, cre, ctb] (R port and updates)",
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
         "Repository": "CRAN",
-        "Date/Publication": "2021-05-03 14:06:33 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:46:49 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Date/Publication": "2021-05-03 14:06:48 UTC",
+        "Built": "R 4.0.5; x86_64-pc-linux-gnu; \"Mon, 10 May 2021 17:48:58 +0000\"; unix"
       }
     },
     "MASS": {
@@ -95,9 +93,7 @@
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
         "Repository": "CRAN",
         "Date/Publication": "2022-08-03 15:06:59 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:41:32 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:20:08 UTC; unix"
       }
     },
     "Matrix": {
@@ -130,9 +126,7 @@
         "Author": "Douglas Bates [aut],\n  Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>),\n  Mikael Jagan [aut] (<https://orcid.org/0000-0002-3542-2938>),\n  Timothy A. Davis [ctb] (SuiteSparse and 'cs' C libraries, notably\n    CHOLMOD and AMD, collaborators listed in\n    dir(pattern=\"^[A-Z]+[.]txt$\", full.names=TRUE, system.file(\"doc\",\n    \"SuiteSparse\", package=\"Matrix\"))),\n  Jens Oehlschlägel [ctb] (initial nearPD()),\n  Jason Riedy [ctb] (condest() and onenormest() for octave, Copyright:\n    Regents of the University of California),\n  R Core Team [ctb] (base R matrix implementation)",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-11 08:30:10 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-11-14 11:42:46 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 01:55:24 UTC; unix"
       }
     },
     "R.cache": {
@@ -157,7 +151,7 @@
         "Packaged": "2022-07-21 13:19:33 UTC; hb",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-21 16:20:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:26:35 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:21:19 UTC; unix"
       }
     },
     "R.methodsS3": {
@@ -182,7 +176,7 @@
         "Packaged": "2022-06-13 18:23:35 UTC; hb",
         "Repository": "CRAN",
         "Date/Publication": "2022-06-13 22:00:14 UTC",
-        "Built": "R 4.2.0; ; 2022-06-13 23:51:09 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:21:03 UTC; unix"
       }
     },
     "R.oo": {
@@ -207,11 +201,11 @@
         "Packaged": "2022-06-12 00:26:52 UTC; hb",
         "Repository": "CRAN",
         "Date/Publication": "2022-06-12 02:20:02 UTC",
-        "Built": "R 4.2.0; ; 2022-06-13 23:51:49 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:21:04 UTC; unix"
       }
     },
     "R.utils": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "R.utils",
@@ -230,9 +224,10 @@
         "BugReports": "https://github.com/HenrikBengtsson/R.utils/issues",
         "NeedsCompilation": "no",
         "Packaged": "2022-11-11 18:51:45 UTC; hb",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-11 22:00:03 UTC",
-        "Built": "R 4.2.2; ; 2022-12-11 01:53:11 UTC; windows"
+        "Encoding": "UTF-8",
+        "Built": "R 4.3.0; ; 2023-04-21 23:18:24 UTC; unix"
       }
     },
     "R6": {
@@ -256,11 +251,11 @@
         "Maintainer": "Winston Chang <winston@stdout.org>",
         "Repository": "CRAN",
         "Date/Publication": "2021-08-19 14:00:05 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:33 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:21:21 UTC; unix"
       }
     },
     "RColorBrewer": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "RColorBrewer",
@@ -275,15 +270,14 @@
         "License": "Apache License 2.0",
         "Packaged": "2022-04-03 10:26:20 UTC; neuwirth",
         "NeedsCompilation": "no",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-04-03 19:20:13 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2022-04-22 18:26:11 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:21:22 UTC; unix"
       }
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "Rcpp",
         "Title": "Seamless R and C++ Integration",
@@ -303,13 +297,11 @@
         "Packaged": "2022-07-02 15:34:02 UTC; edd",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-08 23:10:06 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-04 02:08:23 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:24 UTC; unix"
       }
     },
     "askpass": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "askpass",
@@ -331,11 +323,9 @@
         "Packaged": "2019-01-13 12:08:17 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2019-01-13 12:50:03 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-05-07 00:39:04 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:52 UTC; unix"
       }
     },
     "backports": {
@@ -361,9 +351,7 @@
         "Author": "Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),\n  R Core Team [aut]",
         "Repository": "CRAN",
         "Date/Publication": "2021-12-13 11:30:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-04-24 01:19:58 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:53 UTC; unix"
       }
     },
     "base64enc": {
@@ -384,18 +372,16 @@
         "Packaged": "2015-02-04 20:31:00 UTC; svnuser",
         "Repository": "CRAN",
         "Date/Publication": "2015-07-28 08:03:37",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-04-24 01:19:39 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:55 UTC; unix"
       }
     },
     "box": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "box",
         "Title": "Write Reusable, Composable and Modular R Code",
-        "Version": "1.1.2",
+        "Version": "1.1.3",
         "Authors@R": "c(\n        person(\n            'Konrad', 'Rudolph',\n            email = 'konrad.rudolph@gmail.com',\n            role = c('aut', 'cre'),\n            comment = c(ORCID = '0000-0002-9866-7051')\n        ),\n        person(\n            'Michael', 'Schubert',\n            email = 'mschu.dev@gmail.com',\n            role = 'ctb',\n            comment = c(ORCID = '0000-0002-6862-5221')\n        )\n    )",
         "URL": "https://klmr.me/box/, https://github.com/klmr/box",
         "BugReports": "https://github.com/klmr/box/issues",
@@ -404,19 +390,17 @@
         "Imports": "tools",
         "License": "MIT + file LICENSE",
         "Encoding": "UTF-8",
-        "Suggests": "devtools, knitr, rmarkdown, R6, rlang, roxygen2 (>= 7.0.2),\nshiny, testthat (>= 3.0.3)",
+        "Suggests": "devtools, knitr (>= 1.40), rmarkdown, R6, rlang, roxygen2 (>=\n7.2.1), shiny, stringr, testthat (>= 3.1.7)",
         "Enhances": "rstudioapi",
         "VignetteBuilder": "knitr",
-        "RoxygenNote": "7.1.2",
+        "RoxygenNote": "7.2.1",
         "NeedsCompilation": "yes",
-        "Packaged": "2022-05-11 15:42:31 UTC; konrad",
+        "Packaged": "2023-05-01 13:38:04 UTC; konrad",
         "Author": "Konrad Rudolph [aut, cre] (<https://orcid.org/0000-0002-9866-7051>),\n  Michael Schubert [ctb] (<https://orcid.org/0000-0002-6862-5221>)",
         "Maintainer": "Konrad Rudolph <konrad.rudolph@gmail.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-05-11 17:00:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:54:28 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Repository": "RSPM",
+        "Date/Publication": "2023-05-02 07:10:02 UTC",
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-15 11:03:20 UTC; unix"
       }
     },
     "brio": {
@@ -440,9 +424,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-30 13:10:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:35 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:59 UTC; unix"
       }
     },
     "bslib": {
@@ -473,7 +455,7 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-11-02 21:10:10 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:54:47 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:24:29 UTC; unix"
       }
     },
     "cachem": {
@@ -498,9 +480,7 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-08-19 21:30:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:01 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:26 UTC; unix"
       }
     },
     "callr": {
@@ -529,7 +509,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-11-02 16:40:11 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:53:06 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:24:39 UTC; unix"
       }
     },
     "checkmate": {
@@ -560,19 +540,17 @@
         "Maintainer": "Michel Lang <michellang@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-04-21 07:30:05 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-04-22 18:28:48 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-21 22:20:18 UTC; unix"
       }
     },
     "class": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "class",
         "Priority": "recommended",
-        "Version": "7.3-20",
-        "Date": "2022-01-12",
+        "Version": "7.3-22",
+        "Date": "2023-05-02",
         "Depends": "R (>= 3.0.0), stats, utils",
         "Imports": "MASS",
         "Authors@R": "c(person(\"Brian\", \"Ripley\", role = c(\"aut\", \"cre\", \"cph\"),\n                    email = \"ripley@stats.ox.ac.uk\"),\n             person(\"William\", \"Venables\", role = \"cph\"))",
@@ -582,14 +560,13 @@
         "License": "GPL-2 | GPL-3",
         "URL": "http://www.stats.ox.ac.uk/pub/MASS4/",
         "NeedsCompilation": "yes",
-        "Packaged": "2022-01-13 05:06:38 UTC; ripley",
+        "Packaged": "2023-05-02 16:15:43 UTC; ripley",
         "Author": "Brian Ripley [aut, cre, cph],\n  William Venables [cph]",
         "Maintainer": "Brian Ripley <ripley@stats.ox.ac.uk>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-01-16 10:24:56 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:47:08 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Repository": "RSPM",
+        "Date/Publication": "2023-05-03 11:01:28 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-04 21:54:10 UTC; unix"
       }
     },
     "classInt": {
@@ -617,9 +594,7 @@
         "Maintainer": "Roger Bivand <Roger.Bivand@nhh.no>",
         "Repository": "RSPM",
         "Date/Publication": "2022-09-29 08:10:15 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-09-30 12:04:28 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 20:48:12 UTC; unix"
       }
     },
     "cli": {
@@ -647,9 +622,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-09-23 11:20:05 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:36:20 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:47 UTC; unix"
       }
     },
     "codetools": {
@@ -670,11 +643,11 @@
         "Packaged": "2020-11-02 14:45:50 UTC; luke",
         "Repository": "CRAN",
         "Date/Publication": "2020-11-04 17:12:32 UTC",
-        "Built": "R 4.2.2; ; 2022-10-31 14:46:35 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:20:07 UTC; unix"
       }
     },
     "colorspace": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "colorspace",
@@ -696,12 +669,9 @@
         "Packaged": "2022-02-19 11:47:52 UTC; zeileis",
         "Author": "Ross Ihaka [aut],\n  Paul Murrell [aut] (<https://orcid.org/0000-0002-3224-8858>),\n  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),\n  Jason C. Fisher [aut] (<https://orcid.org/0000-0001-9032-8912>),\n  Reto Stauffer [aut] (<https://orcid.org/0000-0002-3798-5507>),\n  Claus O. Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),\n  Claire D. McWhite [aut] (<https://orcid.org/0000-0001-7346-3047>),\n  Achim Zeileis [aut, cre] (<https://orcid.org/0000-0003-0918-3766>)",
         "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-02-21 09:50:02 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-04-22 18:24:20 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:30 UTC; unix"
       }
     },
     "commonmark": {
@@ -727,9 +697,7 @@
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-14 12:42:33 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:46 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:35 UTC; unix"
       }
     },
     "config": {
@@ -757,7 +725,7 @@
         "Maintainer": "Andrie de Vries <apdevries@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2020-12-17 11:00:06 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:40:20 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:48 UTC; unix"
       }
     },
     "countrycode": {
@@ -785,11 +753,11 @@
         "Maintainer": "Vincent Arel-Bundock <vincent.arel-bundock@umontreal.ca>",
         "Repository": "RSPM",
         "Date/Publication": "2022-05-04 19:20:02 UTC",
-        "Built": "R 4.2.0; ; 2022-05-05 18:09:12 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-22 00:24:57 UTC; unix"
       }
     },
     "cpp11": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "cpp11",
@@ -812,9 +780,9 @@
         "Packaged": "2022-10-12 08:07:26 UTC; romainfrancois",
         "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Romain François [aut, cre],\n  Benjamin Kietzman [ctb],\n  RStudio [cph, fnd]",
         "Maintainer": "Romain François <romain@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-12 08:43:54 UTC",
-        "Built": "R 4.2.0; ; 2022-10-19 21:01:04 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:49 UTC; unix"
       }
     },
     "crayon": {
@@ -840,11 +808,11 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-09-29 16:20:24 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:36 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:50 UTC; unix"
       }
     },
     "crosstalk": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "crosstalk",
@@ -864,13 +832,13 @@
         "Packaged": "2021-11-04 15:35:47 UTC; cpsievert",
         "Author": "Joe Cheng [aut],\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2021-11-04 16:30:02 UTC",
-        "Built": "R 4.2.0; ; 2022-04-22 21:47:58 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:53 UTC; unix"
       }
     },
     "curl": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "curl",
@@ -893,11 +861,9 @@
         "Packaged": "2022-10-06 17:34:42 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-06 21:30:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-10-07 11:49:45 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:56 UTC; unix"
       }
     },
     "cyclocomp": {
@@ -921,7 +887,7 @@
         "Packaged": "2016-09-10 11:38:16 UTC; gaborcsardi",
         "Repository": "CRAN",
         "Date/Publication": "2016-09-10 18:09:36",
-        "Built": "R 4.2.2; ; 2022-12-13 02:54:44 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:06 UTC; unix"
       }
     },
     "data.table": {
@@ -949,9 +915,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-11-16 21:30:02 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-11-17 11:32:13 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-23 02:22:47 UTC; unix"
       }
     },
     "desc": {
@@ -981,7 +945,7 @@
         "Author": "Gábor Csárdi [aut, cre],\n  Kirill Müller [aut],\n  Jim Hester [aut],\n  Maëlle Salmon [ctb] (<https://orcid.org/0000-0002-2815-0399>),\n  RStudio [cph, fnd]",
         "Repository": "CRAN",
         "Date/Publication": "2022-09-08 10:52:55 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:25:14 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:00 UTC; unix"
       }
     },
     "diffobj": {
@@ -1010,13 +974,11 @@
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-10-05 07:10:17 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:46 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:07 UTC; unix"
       }
     },
     "digest": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "digest",
@@ -1035,16 +997,13 @@
         "VignetteBuilder": "simplermarkdown",
         "NeedsCompilation": "yes",
         "Packaged": "2022-10-17 13:37:40 UTC; edd",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-18 08:32:35 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:34:51 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:15 UTC; unix"
       }
     },
     "dplyr": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Type": "Package",
@@ -1069,11 +1028,9 @@
         "Packaged": "2022-08-31 18:31:04 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>),\n  Lionel Henry [aut],\n  Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>),\n  RStudio [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-09-01 09:20:06 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-09-02 11:21:36 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:17 UTC; unix"
       }
     },
     "e1071": {
@@ -1096,9 +1053,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-10-24 11:30:25 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-10-25 11:46:01 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-23 18:19:12 UTC; unix"
       }
     },
     "ellipsis": {
@@ -1124,20 +1079,18 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-04-29 12:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:02 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:26 UTC; unix"
       }
     },
     "evaluate": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "evaluate",
         "Type": "Package",
         "Title": "Parsing and Evaluation Tools that Provide More Details than the\nDefault",
         "Version": "0.18",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", role = \"aut\"),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\", comment = c(ORCID = \"0000-0003-0645-5666\")),\n    person(\"Michael\", \"Lawrence\", role = \"ctb\"),\n    person(\"Thomas\", \"Kluyver\", role = \"ctb\"),\n    person(\"Jeroen\", \"Ooms\", role = \"ctb\"),\n    person(\"Barret\", \"Schloerke\", role = \"ctb\"),\n    person(\"Adam\", \"Ryczkowski\", role = \"ctb\"),\n    person(\"Hiroaki\", \"Yutani\", role = \"ctb\"),\n    person(\"Michel\", \"Lang\", role = \"ctb\"),\n    person(\"Karolis\", \"Koncevicius\", role = \"ctb\")\n    )",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", role = \"aut\"),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\", comment = c(ORCID = \"0000-0003-0645-5666\")),\n    person(\"Michael\", \"Lawrence\", role = \"ctb\"),\n    person(\"Thomas\", \"Kluyver\", role = \"ctb\"),\n    person(\"Jeroen\", \"Ooms\", role = \"ctb\"),\n    person(\"Barret\", \"Schloerke\", role = \"ctb\"),\n    person(\"Adam\", \"Ryczkowski\", role = \"ctb\"),\n    person(\"Hiroaki\", \"Yutani\", role = \"ctb\"),\n    person(\"Michel\", \"Lang\", role = \"ctb\"),\n    person(\"Karolis\", \"Koncevičius\", role = \"ctb\")\n    )",
         "Description": "Parsing and evaluation tools that make it easy to recreate the\n    command line behaviour of R.",
         "License": "MIT + file LICENSE",
         "URL": "https://github.com/r-lib/evaluate",
@@ -1149,11 +1102,11 @@
         "Encoding": "UTF-8",
         "NeedsCompilation": "no",
         "Packaged": "2022-11-07 04:37:14 UTC; yihui",
-        "Author": "Hadley Wickham [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Michael Lawrence [ctb],\n  Thomas Kluyver [ctb],\n  Jeroen Ooms [ctb],\n  Barret Schloerke [ctb],\n  Adam Ryczkowski [ctb],\n  Hiroaki Yutani [ctb],\n  Michel Lang [ctb],\n  Karolis Koncevicius [ctb]",
+        "Author": "Hadley Wickham [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Michael Lawrence [ctb],\n  Thomas Kluyver [ctb],\n  Jeroen Ooms [ctb],\n  Barret Schloerke [ctb],\n  Adam Ryczkowski [ctb],\n  Hiroaki Yutani [ctb],\n  Michel Lang [ctb],\n  Karolis Koncevičius [ctb]",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-11-07 08:50:05 UTC",
-        "Built": "R 4.2.2; ; 2022-12-28 14:35:46 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:27 UTC; unix"
       }
     },
     "fansi": {
@@ -1181,13 +1134,11 @@
         "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-03-24 07:50:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:47 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:43 UTC; unix"
       }
     },
     "farver": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Type": "Package",
@@ -1208,11 +1159,9 @@
         "NeedsCompilation": "yes",
         "Packaged": "2022-07-06 12:54:24 UTC; thomas",
         "Author": "Thomas Lin Pedersen [cre, aut]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Berendea Nicolae [aut] (Author of the ColorSpace C++ library),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>)",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-07-06 13:50:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-10-19 21:03:35 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:28 UTC; unix"
       }
     },
     "fastmap": {
@@ -1237,9 +1186,7 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-01-25 21:00:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:33 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:22:10 UTC; unix"
       }
     },
     "fontawesome": {
@@ -1268,7 +1215,7 @@
         "Maintainer": "Richard Iannone <rich@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-25 12:35:07 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:20:49 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:46 UTC; unix"
       }
     },
     "fs": {
@@ -1299,9 +1246,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-12-08 23:00:08 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:36:07 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:22:20 UTC; unix"
       }
     },
     "fst": {
@@ -1331,9 +1276,7 @@
         "Maintainer": "Mark Klik <markklik@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-02-08 07:40:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-07-11 18:47:09 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 00:39:49 UTC; unix"
       }
     },
     "fstcore": {
@@ -1364,13 +1307,11 @@
         "Maintainer": "Mark Klik <markklik@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-03-23 07:50:12 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-07-11 18:45:11 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 07:46:59 UTC; unix"
       }
     },
     "generics": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "generics",
@@ -1392,13 +1333,13 @@
         "Packaged": "2022-07-05 14:52:13 UTC; davis",
         "Author": "Hadley Wickham [aut, cre],\n  Max Kuhn [aut],\n  Davis Vaughan [aut],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-07-05 19:40:02 UTC",
-        "Built": "R 4.2.0; ; 2022-10-19 21:00:55 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:14 UTC; unix"
       }
     },
     "ggplot2": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "ggplot2",
@@ -1424,9 +1365,9 @@
         "Packaged": "2022-10-31 13:29:43 UTC; thomas",
         "Author": "Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Winston Chang [aut] (<https://orcid.org/0000-0002-1576-2126>),\n  Lionel Henry [aut],\n  Thomas Lin Pedersen [aut, cre]\n    (<https://orcid.org/0000-0002-5147-4711>),\n  Kohske Takahashi [aut],\n  Claus Wilke [aut] (<https://orcid.org/0000-0002-7470-9261>),\n  Kara Woo [aut] (<https://orcid.org/0000-0002-5125-4188>),\n  Hiroaki Yutani [aut] (<https://orcid.org/0000-0002-3385-7233>),\n  Dewey Dunnington [aut] (<https://orcid.org/0000-0002-9415-4582>),\n  RStudio [cph, fnd]",
         "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-11-04 15:20:09 UTC",
-        "Built": "R 4.2.0; ; 2022-11-07 11:59:16 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:32 UTC; unix"
       }
     },
     "glue": {
@@ -1456,13 +1397,11 @@
         "Maintainer": "Jennifer Bryan <jenny@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-02-24 07:50:20 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:27 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:55 UTC; unix"
       }
     },
     "gridExtra": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "gridExtra",
@@ -1480,14 +1419,13 @@
         "Packaged": "2017-09-08 22:52:09 UTC; baptiste",
         "Author": "Baptiste Auguie [aut, cre],\n  Anton Antonov [ctb]",
         "Maintainer": "Baptiste Auguie <baptiste.auguie@gmail.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2017-09-09 14:12:08 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2022-05-07 00:44:14 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:28:02 UTC; unix"
       }
     },
     "gtable": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "gtable",
@@ -1509,9 +1447,9 @@
         "Packaged": "2022-08-31 22:42:55 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  Thomas Lin Pedersen [aut],\n  RStudio [cph]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-09-01 02:40:12 UTC",
-        "Built": "R 4.2.0; ; 2022-10-19 20:59:00 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:02 UTC; unix"
       }
     },
     "highr": {
@@ -1538,7 +1476,7 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "CRAN",
         "Date/Publication": "2021-04-16 21:50:05 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:25:09 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:28:06 UTC; unix"
       }
     },
     "htmltools": {
@@ -1568,9 +1506,7 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-18 08:40:02 UTC",
-        "Built": "R 4.2.1; x86_64-w64-mingw32; 2022-09-13 01:29:11 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:22:13 UTC; unix"
       }
     },
     "htmlwidgets": {
@@ -1597,7 +1533,7 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-09-08 14:00:02 UTC",
-        "Built": "R 4.2.1; ; 2022-09-13 02:00:12 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:28:07 UTC; unix"
       }
     },
     "httpuv": {
@@ -1627,13 +1563,11 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-09-08 19:42:54 UTC",
-        "Built": "R 4.2.1; x86_64-w64-mingw32; 2022-09-13 02:35:34 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:28:34 UTC; unix"
       }
     },
     "httr": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "httr",
@@ -1655,13 +1589,13 @@
         "Packaged": "2022-08-16 11:25:45 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-08-17 13:00:04 UTC",
-        "Built": "R 4.2.0; ; 2022-08-18 12:34:01 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:54 UTC; unix"
       }
     },
     "isoband": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "isoband",
@@ -1683,11 +1617,9 @@
         "Packaged": "2022-10-06 10:33:32 UTC; clauswilke",
         "Author": "Claus O. Wilke [aut, cre] (<https://orcid.org/0000-0002-7470-9261>),\n  Thomas Lin Pedersen [aut] (<https://orcid.org/0000-0002-5147-4711>),\n  testthat and Catch authors [ctb] (testthat C++ testing code)",
         "Maintainer": "Claus O. Wilke <wilke@austin.utexas.edu>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-06 20:30:10 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:35:55 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:27:03 UTC; unix"
       }
     },
     "jquerylib": {
@@ -1711,11 +1643,11 @@
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-04-26 17:10:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:20:46 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:24:25 UTC; unix"
       }
     },
     "jsonlite": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "jsonlite",
@@ -1735,15 +1667,13 @@
         "NeedsCompilation": "yes",
         "Packaged": "2022-10-18 13:37:44 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Duncan Temple Lang [ctb],\n  Lloyd Hilaiel [cph] (author of bundled libyajl)",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-21 08:15:07 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:35:15 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:22:16 UTC; unix"
       }
     },
     "knitr": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "knitr",
@@ -1767,13 +1697,13 @@
         "Packaged": "2022-11-16 23:30:52 UTC; yihui",
         "Author": "Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Abhraneel Sarma [ctb],\n  Adam Vogt [ctb],\n  Alastair Andrew [ctb],\n  Alex Zvoleff [ctb],\n  Amar Al-Zubaidi [ctb],\n  Andre Simon [ctb] (the CSS files under inst/themes/ were derived from\n    the Highlight package http://www.andre-simon.de),\n  Aron Atkins [ctb],\n  Aaron Wolen [ctb],\n  Ashley Manton [ctb],\n  Atsushi Yasumoto [ctb] (<https://orcid.org/0000-0002-8335-495X>),\n  Ben Baumer [ctb],\n  Brian Diggs [ctb],\n  Brian Zhang [ctb],\n  Bulat Yapparov [ctb],\n  Cassio Pereira [ctb],\n  Christophe Dervieux [ctb],\n  David Hall [ctb],\n  David Hugh-Jones [ctb],\n  David Robinson [ctb],\n  Doug Hemken [ctb],\n  Duncan Murdoch [ctb],\n  Elio Campitelli [ctb],\n  Ellis Hughes [ctb],\n  Emily Riederer [ctb],\n  Fabian Hirschmann [ctb],\n  Fitch Simeon [ctb],\n  Forest Fang [ctb],\n  Frank E Harrell Jr [ctb] (the Sweavel package at inst/misc/Sweavel.sty),\n  Garrick Aden-Buie [ctb],\n  Gregoire Detrez [ctb],\n  Hadley Wickham [ctb],\n  Hao Zhu [ctb],\n  Heewon Jeon [ctb],\n  Henrik Bengtsson [ctb],\n  Hiroaki Yutani [ctb],\n  Ian Lyttle [ctb],\n  Hodges Daniel [ctb],\n  Jacob Bien [ctb],\n  Jake Burkhead [ctb],\n  James Manton [ctb],\n  Jared Lander [ctb],\n  Jason Punyon [ctb],\n  Javier Luraschi [ctb],\n  Jeff Arnold [ctb],\n  Jenny Bryan [ctb],\n  Jeremy Ashkenas [ctb, cph] (the CSS file at\n    inst/misc/docco-classic.css),\n  Jeremy Stephens [ctb],\n  Jim Hester [ctb],\n  Joe Cheng [ctb],\n  Johannes Ranke [ctb],\n  John Honaker [ctb],\n  John Muschelli [ctb],\n  Jonathan Keane [ctb],\n  JJ Allaire [ctb],\n  Johan Toloe [ctb],\n  Jonathan Sidi [ctb],\n  Joseph Larmarange [ctb],\n  Julien Barnier [ctb],\n  Kaiyin Zhong [ctb],\n  Kamil Slowikowski [ctb],\n  Karl Forner [ctb],\n  Kevin K. Smith [ctb],\n  Kirill Mueller [ctb],\n  Kohske Takahashi [ctb],\n  Lorenz Walthert [ctb],\n  Lucas Gallindo [ctb],\n  Marius Hofert [ctb],\n  Martin Modrák [ctb],\n  Michael Chirico [ctb],\n  Michael Friendly [ctb],\n  Michal Bojanowski [ctb],\n  Michel Kuhlmann [ctb],\n  Miller Patrick [ctb],\n  Nacho Caballero [ctb],\n  Nick Salkowski [ctb],\n  Niels Richard Hansen [ctb],\n  Noam Ross [ctb],\n  Obada Mahdi [ctb],\n  Pavel N. Krivitsky [ctb] (<https://orcid.org/0000-0002-9101-3362>),\n  Pedro Faria [ctb],\n  Qiang Li [ctb],\n  Ramnath Vaidyanathan [ctb],\n  Richard Cotton [ctb],\n  Robert Krzyzanowski [ctb],\n  Rodrigo Copetti [ctb],\n  Romain Francois [ctb],\n  Ruaridh Williamson [ctb],\n  Sagiru Mati [ctb] (<https://orcid.org/0000-0003-1413-3974>),\n  Scott Kostyshak [ctb],\n  Sebastian Meyer [ctb],\n  Sietse Brouwer [ctb],\n  Simon de Bernard [ctb],\n  Sylvain Rousseau [ctb],\n  Taiyun Wei [ctb],\n  Thibaut Assus [ctb],\n  Thibaut Lamadon [ctb],\n  Thomas Leeper [ctb],\n  Tim Mastny [ctb],\n  Tom Torsney-Weir [ctb],\n  Trevor Davis [ctb],\n  Viktoras Veitas [ctb],\n  Weicheng Zhu [ctb],\n  Wush Wu [ctb],\n  Zachary Foster [ctb],\n  Zhian N. Kamvar [ctb] (<https://orcid.org/0000-0003-1458-7108>)",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-18 12:00:06 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:50:29 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-23 19:16:48 UTC; unix"
       }
     },
     "labeling": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "labeling",
@@ -1789,10 +1719,9 @@
         "NeedsCompilation": "no",
         "Imports": "stats, graphics",
         "Packaged": "2020-10-18 12:56:46 UTC; nuno",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2020-10-20 07:00:09 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2022-05-07 00:54:58 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:25 UTC; unix"
       }
     },
     "later": {
@@ -1821,13 +1750,11 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-08-18 16:30:06 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:03 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:28:09 UTC; unix"
       }
     },
     "lattice": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "lattice",
@@ -1850,11 +1777,10 @@
         "Packaged": "2021-09-22 09:17:07 UTC; deepayan",
         "Author": "Deepayan Sarkar [aut, cre] (<https://orcid.org/0000-0003-4107-1553>),\n  Felix Andrews [ctb],\n  Kevin Wright [ctb] (documentation),\n  Neil Klepeis [ctb],\n  Johan Larsson [ctb] (colorkey title),\n  Paul Murrell [ctb]",
         "Maintainer": "Deepayan Sarkar <deepayan.sarkar@r-project.org>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2021-09-22 12:10:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:41:49 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Encoding": "UTF-8",
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 01:54:52 UTC; unix"
       }
     },
     "lazyeval": {
@@ -1878,13 +1804,11 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2019-03-15 17:50:07 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:39 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:51 UTC; unix"
       }
     },
     "leaflet": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "leaflet",
@@ -1906,13 +1830,13 @@
         "Packaged": "2022-03-23 03:08:42 UTC; jcheng",
         "Author": "Joe Cheng [aut, cre],\n  Bhaskar Karambelkar [aut],\n  Yihui Xie [aut],\n  Hadley Wickham [ctb],\n  Kenton Russell [ctb],\n  Kent Johnson [ctb],\n  Barret Schloerke [ctb],\n  jQuery Foundation and contributors [ctb, cph] (jQuery library),\n  Vladimir Agafonkin [ctb, cph] (Leaflet library),\n  CloudMade [cph] (Leaflet library),\n  Leaflet contributors [ctb] (Leaflet library),\n  Brandon Copeland [ctb, cph] (leaflet-measure plugin),\n  Joerg Dietrich [ctb, cph] (Leaflet.Terminator plugin),\n  Benjamin Becquet [ctb, cph] (Leaflet.MagnifyingGlass plugin),\n  Norkart AS [ctb, cph] (Leaflet.MiniMap plugin),\n  L. Voogdt [ctb, cph] (Leaflet.awesome-markers plugin),\n  Daniel Montague [ctb, cph] (Leaflet.EasyButton plugin),\n  Kartena AB [ctb, cph] (Proj4Leaflet plugin),\n  Robert Kajic [ctb, cph] (leaflet-locationfilter plugin),\n  Mapbox [ctb, cph] (leaflet-omnivore plugin),\n  Michael Bostock [ctb, cph] (topojson),\n  RStudio [cph]",
         "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-03-23 23:40:02 UTC",
-        "Built": "R 4.2.0; ; 2022-04-22 22:01:29 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:17 UTC; unix"
       }
     },
     "leaflet.providers": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "leaflet.providers",
@@ -1935,9 +1859,9 @@
         "Packaged": "2019-11-08 22:12:22 UTC; barret",
         "Author": "Leslie Huang [aut],\n  Barret Schloerke [ctb, cre] (<https://orcid.org/0000-0001-9986-114X>),\n  Leaflet Providers contributors [ctb, cph] (Leaflet Providers plugin),\n  RStudio [cph, fnd]",
         "Maintainer": "Barret Schloerke <barret@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2019-11-09 23:40:09 UTC",
-        "Built": "R 4.2.0; ; 2022-05-07 02:32:40 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:16 UTC; unix"
       }
     },
     "lifecycle": {
@@ -1966,7 +1890,7 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-07 09:50:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:25:15 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:24:56 UTC; unix"
       }
     },
     "lintr": {
@@ -1996,7 +1920,7 @@
         "Maintainer": "Jim Hester <james.f.hester@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-19 09:52:37 UTC",
-        "Built": "R 4.2.2; ; 2022-12-08 04:17:15 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:31:29 UTC; unix"
       }
     },
     "logger": {
@@ -2025,7 +1949,7 @@
         "Maintainer": "Gergely Daróczi <daroczig@rapporter.net>",
         "Repository": "CRAN",
         "Date/Publication": "2021-10-19 05:30:08 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:38:38 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:19 UTC; unix"
       }
     },
     "magrittr": {
@@ -2054,9 +1978,7 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-03-30 07:30:09 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:37 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:58 UTC; unix"
       }
     },
     "markdown": {
@@ -2084,7 +2006,7 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-16 12:10:42 UTC",
-        "Built": "R 4.2.0; ; 2022-11-17 11:49:35 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-23 18:29:46 UTC; unix"
       }
     },
     "memoise": {
@@ -2109,7 +2031,7 @@
         "Maintainer": "Winston Chang <winston@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-26 16:11:10 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:52:56 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:24:27 UTC; unix"
       }
     },
     "mgcv": {
@@ -2133,9 +2055,7 @@
         "Packaged": "2022-10-21 11:50:05 UTC; sw283",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-21 13:52:37 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:47:23 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:20:26 UTC; unix"
       }
     },
     "mime": {
@@ -2160,13 +2080,11 @@
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Repository": "CRAN",
         "Date/Publication": "2021-09-28 05:00:05 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-04-24 01:19:40 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:48 UTC; unix"
       }
     },
     "munsell": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "munsell",
@@ -2183,10 +2101,9 @@
         "RoxygenNote": "6.0.1",
         "NeedsCompilation": "no",
         "Packaged": "2018-06-11 23:15:15 UTC; wickhamc",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2018-06-12 04:29:06 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2022-05-07 00:40:57 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:26 UTC; unix"
       }
     },
     "nlme": {
@@ -2216,13 +2133,11 @@
         "Maintainer": "R Core Team <R-core@R-project.org>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-10 14:15:09 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-10-31 14:44:46 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:20:14 UTC; unix"
       }
     },
     "openssl": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "openssl",
@@ -2244,11 +2159,9 @@
         "Packaged": "2022-10-17 08:56:04 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-17 09:30:05 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:36:44 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:26:50 UTC; unix"
       }
     },
     "pillar": {
@@ -2280,7 +2193,7 @@
         "Maintainer": "Kirill Müller <kirill@cynkra.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-08-19 08:40:07 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:21:22 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:18 UTC; unix"
       }
     },
     "pkgconfig": {
@@ -2304,11 +2217,11 @@
         "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
         "Repository": "CRAN",
         "Date/Publication": "2019-09-22 09:20:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:29 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:22 UTC; unix"
       }
     },
     "pkgload": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "pkgload",
@@ -2330,9 +2243,9 @@
         "Packaged": "2022-11-14 14:04:57 UTC; lionel",
         "Author": "Hadley Wickham [aut],\n  Winston Chang [aut],\n  Jim Hester [aut],\n  Lionel Henry [aut, cre],\n  RStudio [cph, fnd],\n  R Core team [ctb] (Some namespace and vignette code extracted from base\n    R)",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-16 15:20:13 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 02:54:00 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-21 22:21:40 UTC; unix"
       }
     },
     "plotly": {
@@ -2359,7 +2272,7 @@
         "Maintainer": "Carson Sievert <cpsievert1@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-07 07:30:03 UTC",
-        "Built": "R 4.2.0; ; 2022-11-08 11:40:11 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-21 23:17:29 UTC; unix"
       }
     },
     "png": {
@@ -2381,9 +2294,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-11-29 11:12:53 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-11-30 11:33:22 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-21 23:13:33 UTC; unix"
       }
     },
     "praise": {
@@ -2406,7 +2317,7 @@
         "Packaged": "2015-08-11 02:01:43 UTC; gaborcsardi",
         "Repository": "CRAN",
         "Date/Publication": "2015-08-11 08:22:28",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:24 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:21 UTC; unix"
       }
     },
     "processx": {
@@ -2434,9 +2345,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-26 11:12:39 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:20 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:35 UTC; unix"
       }
     },
     "promises": {
@@ -2466,9 +2375,7 @@
         "Maintainer": "Joe Cheng <joe@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-02-11 19:00:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:53:08 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:28:24 UTC; unix"
       }
     },
     "proxy": {
@@ -2493,9 +2400,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-06-09 06:15:32 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-06-10 11:44:45 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-21 23:16:23 UTC; unix"
       }
     },
     "ps": {
@@ -2524,13 +2429,11 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-26 17:32:36 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:41 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:32 UTC; unix"
       }
     },
     "purrr": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "purrr",
@@ -2551,11 +2454,9 @@
         "Packaged": "2022-09-28 12:56:52 UTC; lionel",
         "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph, fnd]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-10-06 10:10:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:25:20 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 09:10:39 UTC; unix"
       }
     },
     "rappdirs": {
@@ -2583,9 +2484,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-01-31 05:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:33 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:22:59 UTC; unix"
       }
     },
     "raster": {
@@ -2614,9 +2513,7 @@
         "Repository": "RSPM",
         "Date/Publication": "2022-11-28 15:20:02 UTC",
         "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-12-07 12:15:47 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 08:09:08 UTC; unix"
       }
     },
     "rematch2": {
@@ -2642,7 +2539,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2020-05-01 06:50:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 04:04:11 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:57 UTC; unix"
       }
     },
     "remotes": {
@@ -2670,7 +2567,7 @@
         "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-30 14:00:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:37:36 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:02 UTC; unix"
       }
     },
     "renv": {
@@ -2697,7 +2594,7 @@
         "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-09-29 08:10:02 UTC",
-        "Built": "R 4.2.2; ; 2023-01-26 02:12:56 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-07-06 14:03:48 UTC; unix"
       }
     },
     "rex": {
@@ -2725,17 +2622,17 @@
         "Maintainer": "Kevin Ushey <kevinushey@gmail.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-26 16:11:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:38:08 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:31:20 UTC; unix"
       }
     },
     "rhino": {
-      "Source": "RSPM",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "rhino",
         "Title": "A Framework for Enterprise Shiny Applications",
-        "Version": "1.3.0",
-        "Authors@R": "\n  c(\n    person(\"Kamil\", \"Zyla\", role = c(\"aut\", \"cre\"), email = \"opensource+kamil@appsilon.com\"),\n    person(\"Jakub\", \"Nowicki\", role = \"aut\", email = \"kuba@appsilon.com\"),\n    person(\"Leszek\", \"Sieminski\", role = \"aut\", email = \"leszek.sieminski@appsilon.com\"),\n    person(\"Marek\", \"Rogala\", role = \"aut\", email = \"marek@appsilon.com\"),\n    person(\"Recle\", \"Vibal\", role = \"aut\", email = \"recle.vibal@appsilon.com\"),\n    person(\"Tymoteusz\", \"Makowski\", role = \"aut\", email = \"tymek.makowski@gmail.com\"),\n    person(\"Appsilon Sp. z o.o.\", role = \"cph\", email = \"opensource@appsilon.com\")\n  )",
+        "Version": "1.4.0",
+        "Authors@R": "\n  c(\n    person(\"Kamil\", \"Żyła\", role = c(\"aut\", \"cre\"), email = \"opensource+kamil@appsilon.com\"),\n    person(\"Jakub\", \"Nowicki\", role = \"aut\", email = \"kuba@appsilon.com\"),\n    person(\"Leszek\", \"Siemiński\", role = \"aut\", email = \"leszek.sieminski@appsilon.com\"),\n    person(\"Marek\", \"Rogala\", role = \"aut\", email = \"marek@appsilon.com\"),\n    person(\"Recle\", \"Vibal\", role = \"aut\", email = \"recle.vibal@appsilon.com\"),\n    person(\"Tymoteusz\", \"Makowski\", role = \"aut\", email = \"tymek.makowski@gmail.com\"),\n    person(\"Appsilon Sp. z o.o.\", role = \"cph\", email = \"opensource@appsilon.com\")\n  )",
         "Description": "A framework that supports creating and extending enterprise Shiny applications using best practices.",
         "URL": "https://appsilon.github.io/rhino/,\nhttps://github.com/Appsilon/rhino",
         "BugReports": "https://github.com/Appsilon/rhino/issues",
@@ -2743,23 +2640,23 @@
         "Encoding": "UTF-8",
         "RoxygenNote": "7.2.3",
         "Depends": "R (>= 2.10)",
-        "Imports": "box, cli, config, fs, glue, lintr (>= 3.0.0), logger, purrr,\nrenv, rstudioapi, sass, shiny, styler, testthat (>= 3.0.0),\nutils, withr, yaml",
-        "Suggests": "covr, knitr, mockery, rcmdcheck, rmarkdown, spelling",
+        "Imports": "box (>= 1.1.3), cli, config, fs, glue, lintr (>= 3.0.0),\nlogger, purrr, renv, rstudioapi, sass, shiny, styler, testthat\n(>= 3.0.0), utils, withr, yaml",
+        "Suggests": "covr, knitr, mockery, rcmdcheck, rmarkdown, shiny.react,\nspelling",
         "LazyData": "true",
         "Config/testthat/edition": "3",
         "Config/testthat/parallel": "true",
         "Language": "en-US",
         "NeedsCompilation": "no",
-        "Packaged": "2022-12-22 12:35:49 UTC; kamil",
-        "Author": "Kamil Zyla [aut, cre],\n  Jakub Nowicki [aut],\n  Leszek Sieminski [aut],\n  Marek Rogala [aut],\n  Recle Vibal [aut],\n  Tymoteusz Makowski [aut],\n  Appsilon Sp. z o.o. [cph]",
-        "Maintainer": "Kamil Zyla <opensource+kamil@appsilon.com>",
-        "Repository": "RSPM",
-        "Date/Publication": "2022-12-22 12:50:02 UTC",
-        "Built": "R 4.2.0; ; 2022-12-23 11:51:22 UTC; windows"
+        "Packaged": "2023-07-06 14:31:25 UTC; kamil",
+        "Author": "Kamil Żyła [aut, cre],\n  Jakub Nowicki [aut],\n  Leszek Siemiński [aut],\n  Marek Rogala [aut],\n  Recle Vibal [aut],\n  Tymoteusz Makowski [aut],\n  Appsilon Sp. z o.o. [cph]",
+        "Maintainer": "Kamil Żyła <opensource+kamil@appsilon.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-07-06 15:00:02 UTC",
+        "Built": "R 4.3.0; ; 2023-07-07 07:55:46 UTC; unix"
       }
     },
     "rlang": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "rlang",
@@ -2785,11 +2682,9 @@
         "Packaged": "2022-09-23 16:12:48 UTC; lionel",
         "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  RStudio [cph, fnd]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-09-24 05:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:36:48 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 16:49:40 UTC; unix"
       }
     },
     "rprojroot": {
@@ -2816,7 +2711,7 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "CRAN",
         "Date/Publication": "2022-04-02 16:40:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:44 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:25:58 UTC; unix"
       }
     },
     "rstudioapi": {
@@ -2841,7 +2736,7 @@
         "Author": "Kevin Ushey [aut, cre],\n  JJ Allaire [aut],\n  Hadley Wickham [aut],\n  Gary Ritchie [aut],\n  RStudio [cph]",
         "Repository": "CRAN",
         "Date/Publication": "2022-08-22 22:00:03 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:59 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:57 UTC; unix"
       }
     },
     "s2": {
@@ -2871,13 +2766,11 @@
         "Maintainer": "Edzer Pebesma <edzer.pebesma@uni-muenster.de>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-17 19:30:09 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-12-12 11:44:07 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 06:24:45 UTC; unix"
       }
     },
     "sass": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Type": "Package",
@@ -2900,15 +2793,13 @@
         "Packaged": "2022-11-22 17:14:51 UTC; cpsievert",
         "Author": "Joe Cheng [aut],\n  Timothy Mastny [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>),\n  RStudio [cph, fnd],\n  Sass Open Source Foundation [ctb, cph] (LibSass library),\n  Greter Marcel [ctb, cph] (LibSass library),\n  Mifsud Michael [ctb, cph] (LibSass library),\n  Hampton Catlin [ctb, cph] (LibSass library),\n  Natalie Weizenbaum [ctb, cph] (LibSass library),\n  Chris Eppstein [ctb, cph] (LibSass library),\n  Adams Joseph [ctb, cph] (json.cpp),\n  Trifunovic Nemanja [ctb, cph] (utf8.h)",
         "Maintainer": "Carson Sievert <carson@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-24 08:50:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 03:21:26 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-23 19:23:14 UTC; unix"
       }
     },
     "scales": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "scales",
@@ -2931,9 +2822,9 @@
         "Packaged": "2022-08-19 15:35:49 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  Dana Seidel [aut],\n  RStudio [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-08-20 00:10:11 UTC",
-        "Built": "R 4.2.0; ; 2022-08-24 02:18:16 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:29 UTC; unix"
       }
     },
     "sf": {
@@ -2963,14 +2854,12 @@
         "Maintainer": "Edzer Pebesma <edzer.pebesma@uni-muenster.de>",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-08 14:20:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-12-06 17:13:16 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-22 17:30:15 UTC; unix"
       }
     },
     "shiny": {
-      "Source": "RSPM",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "shiny",
         "Type": "Package",
@@ -2994,9 +2883,9 @@
         "Packaged": "2022-10-25 16:47:45 UTC; jcheng",
         "Author": "Winston Chang [aut, cre] (<https://orcid.org/0000-0002-1576-2126>),\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Carson Sievert [aut] (<https://orcid.org/0000-0002-4958-2844>),\n  Barret Schloerke [aut] (<https://orcid.org/0000-0001-9986-114X>),\n  Yihui Xie [aut],\n  Jeff Allen [aut],\n  Jonathan McPherson [aut],\n  Alan Dipert [aut],\n  Barbara Borges [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Prem Nawaz Khan [ctb] (Bootstrap accessibility plugin),\n  Victor Tsaran [ctb] (Bootstrap accessibility plugin),\n  Dennis Lembree [ctb] (Bootstrap accessibility plugin),\n  Srinivasu Chakravarthula [ctb] (Bootstrap accessibility plugin),\n  Cathy O'Connor [ctb] (Bootstrap accessibility plugin),\n  PayPal, Inc [cph] (Bootstrap accessibility plugin),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Salmen Bejaoui [ctb, cph] (selectize-plugin-a11y library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
         "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-25 20:50:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-28 14:46:01 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:31 UTC; unix"
       }
     },
     "shiny.semantic": {
@@ -3007,7 +2896,7 @@
         "Type": "Package",
         "Title": "Semantic UI Support for Shiny",
         "Version": "0.4.3",
-        "Authors@R": "c(person(\"Filip\", \"Stachura\", email = \"filip@appsilon.com\", role = \"aut\"),\n  person(\"Dominik\", \"Krzeminski\", email = \"dominik@appsilon.com\", role = \"aut\"),\n  person(\"Krystian\", \"Igras\", email = \"krystian@appsilon.com\", role = \"aut\"),\n  person(\"Adam\", \"Forys\", email = \"adam@appsilon.com\", role = \"aut\"),\n  person(\"Pawel\", \"Przytula\", email = \"pawel@appsilon.com\", role = \"aut\"),\n  person(\"Jakub\", \"Chojna\", email = \"jakub.chojna@appsilon.com\", role = \"aut\"),\n  person(\"Olga\", \"Mierzwa-Sulima\", email = \"olga@appsilon.com\", role = \"aut\"),\n  person(\"Ashley\", \"Baldry\", role = \"ctb\"),\n  person(\"Jakub\", \"Chojna\", email = \"jakub.chojna@appsilon.com\", role = \"ctb\"),\n  person(\"Olga\", \"Mierzwa-Sulima\", email = \"olga@appsilon.com\", role = \"ctb\"),\n  person(\"Pedro\", \"Manuel Coutinho da Silva\", email = \"pedro@appsilon.com\", role = \"ctb\"),\n  person(\"Pawel\", \"Przytula\", email = \"pawel@appsilon.com\", role = \"ctb\"),\n  person(\"Kamil\", \"Zyla\", email = \"kamil@appsilon.com\", role = \"ctb\"),\n  person(\"Rabii\", \"Bouhestine\", email = \"rabii@appsilon.com\", role = \"ctb\"),\n  person(\"Developers\", \"Appsilon\", email = \"support+opensource@appsilon.com\", role = \"cre\"),\n  person(family = \"Appsilon Sp. z o.o.\", role = c(\"cph\")))",
+        "Authors@R": "c(person(\"Filip\", \"Stachura\", email = \"filip@appsilon.com\", role = \"aut\"),\n  person(\"Dominik\", \"Krzeminski\", email = \"dominik@appsilon.com\", role = \"aut\"),\n  person(\"Krystian\", \"Igras\", email = \"krystian@appsilon.com\", role = \"aut\"),\n  person(\"Adam\", \"Forys\", email = \"adam@appsilon.com\", role = \"aut\"),\n  person(\"Paweł\", \"Przytuła\", email = \"pawel@appsilon.com\", role = \"aut\"),\n  person(\"Jakub\", \"Chojna\", email = \"jakub.chojna@appsilon.com\", role = \"aut\"),\n  person(\"Olga\", \"Mierzwa-Sulima\", email = \"olga@appsilon.com\", role = \"aut\"),\n  person(\"Ashley\", \"Baldry\", role = \"ctb\"),\n  person(\"Jakub\", \"Chojna\", email = \"jakub.chojna@appsilon.com\", role = \"ctb\"),\n  person(\"Olga\", \"Mierzwa-Sulima\", email = \"olga@appsilon.com\", role = \"ctb\"),\n  person(\"Pedro\", \"Manuel Coutinho da Silva\", email = \"pedro@appsilon.com\", role = \"ctb\"),\n  person(\"Paweł\", \"Przytuła\", email = \"pawel@appsilon.com\", role = \"ctb\"),\n  person(\"Kamil\", \"Żyła\", email = \"kamil@appsilon.com\", role = \"ctb\"),\n  person(\"Rabii\", \"Bouhestine\", email = \"rabii@appsilon.com\", role = \"ctb\"),\n  person(\"Developers\", \"Appsilon\", email = \"support+opensource@appsilon.com\", role = \"cre\"),\n  person(family = \"Appsilon Sp. z o.o.\", role = c(\"cph\")))",
         "Description": "Creating a great user interface for your Shiny apps\n    can be a hassle, especially if you want to work purely in R\n    and don't want to use, for instance HTML templates. This\n    package adds support for a powerful UI library Fomantic UI -\n    <https://fomantic-ui.com/> (before Semantic). It also supports\n    universal UI input binding that works with various DOM elements.",
         "BugReports": "https://github.com/Appsilon/shiny.semantic/issues",
         "Encoding": "UTF-8",
@@ -3018,11 +2907,11 @@
         "RoxygenNote": "7.1.2",
         "NeedsCompilation": "no",
         "Packaged": "2021-11-06 18:20:58 UTC; jakub",
-        "Author": "Filip Stachura [aut],\n  Dominik Krzeminski [aut],\n  Krystian Igras [aut],\n  Adam Forys [aut],\n  Pawel Przytula [aut],\n  Jakub Chojna [aut],\n  Olga Mierzwa-Sulima [aut],\n  Ashley Baldry [ctb],\n  Jakub Chojna [ctb],\n  Olga Mierzwa-Sulima [ctb],\n  Pedro Manuel Coutinho da Silva [ctb],\n  Pawel Przytula [ctb],\n  Kamil Zyla [ctb],\n  Rabii Bouhestine [ctb],\n  Developers Appsilon [cre],\n  Appsilon Sp. z o.o. [cph]",
+        "Author": "Filip Stachura [aut],\n  Dominik Krzeminski [aut],\n  Krystian Igras [aut],\n  Adam Forys [aut],\n  Paweł Przytuła [aut],\n  Jakub Chojna [aut],\n  Olga Mierzwa-Sulima [aut],\n  Ashley Baldry [ctb],\n  Jakub Chojna [ctb],\n  Olga Mierzwa-Sulima [ctb],\n  Pedro Manuel Coutinho da Silva [ctb],\n  Paweł Przytuła [ctb],\n  Kamil Żyła [ctb],\n  Rabii Bouhestine [ctb],\n  Developers Appsilon [cre],\n  Appsilon Sp. z o.o. [cph]",
         "Maintainer": "Developers Appsilon <support+opensource@appsilon.com>",
         "Repository": "RSPM",
         "Date/Publication": "2021-11-07 16:00:02 UTC",
-        "Built": "R 4.2.0; ; 2022-04-25 21:06:04 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-27 18:20:08 UTC; unix"
       }
     },
     "sourcetools": {
@@ -3047,13 +2936,11 @@
         "Packaged": "2018-04-25 03:19:22 UTC; kevin",
         "Repository": "CRAN",
         "Date/Publication": "2018-04-25 03:38:09 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:36:33 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:38:27 UTC; unix"
       }
     },
     "sp": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "sp",
@@ -3073,12 +2960,9 @@
         "Packaged": "2022-11-04 07:30:00 UTC; edzer",
         "Author": "Edzer Pebesma [aut, cre],\n  Roger Bivand [aut],\n  Barry Rowlingson [ctb],\n  Virgilio Gomez-Rubio [ctb],\n  Robert Hijmans [ctb],\n  Michael Sumner [ctb],\n  Don MacQueen [ctb],\n  Jim Lemon [ctb],\n  Finn Lindgren [ctb],\n  Josh O'Brien [ctb],\n  Joseph O'Rourke [ctb]",
         "Maintainer": "Edzer Pebesma <edzer.pebesma@uni-muenster.de>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-11-07 09:10:02 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-11-08 11:36:03 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:36:35 UTC; unix"
       }
     },
     "stringi": {
@@ -3106,13 +2990,11 @@
         "Packaged": "2022-07-11 01:59:34 UTC; gagolews",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-11 08:10:02 UTC",
-        "Built": "R 4.2.1; x86_64-w64-mingw32; 2022-07-11 23:52:00 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:30:25 UTC; unix"
       }
     },
     "stringr": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "stringr",
@@ -3134,9 +3016,9 @@
         "Packaged": "2022-08-20 14:07:06 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre, cph],\n  RStudio [cph, fnd]",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-08-20 22:10:02 UTC",
-        "Built": "R 4.2.1; ; 2022-09-13 01:29:05 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-24 18:18:54 UTC; unix"
       }
     },
     "styler": {
@@ -3167,11 +3049,11 @@
         "Maintainer": "Lorenz Walthert <lorenz.walthert@icloud.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-11-07 23:40:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 03:30:24 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:31:45 UTC; unix"
       }
     },
     "sys": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "sys",
@@ -3191,11 +3073,9 @@
         "Packaged": "2022-10-18 09:37:11 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Gábor Csárdi [ctb]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-18 12:40:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-10-19 13:40:19 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:21:51 UTC; unix"
       }
     },
     "terra": {
@@ -3226,14 +3106,12 @@
         "Author": "Robert J. Hijmans [cre, aut] (<https://orcid.org/0000-0001-5872-2872>),\n  Roger Bivand [ctb] (<https://orcid.org/0000-0003-2392-6140>),\n  Edzer Pebesma [ctb] (<https://orcid.org/0000-0001-8049-7069>),\n  Michael D. Sumner [ctb]",
         "Repository": "RSPM",
         "Date/Publication": "2022-11-18 12:20:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:37:14 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 18:23:54 UTC; unix"
       }
     },
     "testthat": {
-      "Source": "RSPM",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "testthat",
         "Title": "Unit Testing for R",
@@ -3256,11 +3134,9 @@
         "Packaged": "2022-10-07 13:07:36 UTC; hadleywickham",
         "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph, fnd],\n  R Core team [ctb] (Implementation of utils::recover())",
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-08 06:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:46:47 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:38:47 UTC; unix"
       }
     },
     "tibble": {
@@ -3293,9 +3169,7 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "CRAN",
         "Date/Publication": "2022-07-22 06:10:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 03:50:13 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:23 UTC; unix"
       }
     },
     "tidyr": {
@@ -3327,13 +3201,11 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-09-08 07:30:02 UTC",
-        "Built": "R 4.2.0; x86_64-w64-mingw32; 2022-10-13 12:23:08 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-23 19:23:04 UTC; unix"
       }
     },
     "tidyselect": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "tidyselect",
@@ -3357,13 +3229,13 @@
         "Packaged": "2022-10-10 14:09:03 UTC; hadleywickham",
         "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph, fnd]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-10-10 19:00:02 UTC",
-        "Built": "R 4.2.0; ; 2022-10-11 11:32:21 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:15 UTC; unix"
       }
     },
     "units": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "units",
@@ -3387,11 +3259,9 @@
         "Packaged": "2022-02-04 16:14:06 UTC; edzer",
         "Author": "Edzer Pebesma [aut, cre] (<https://orcid.org/0000-0001-8049-7069>),\n  Thomas Mailund [aut],\n  Tomasz Kalinowski [aut],\n  James Hiebert [ctb],\n  Iñaki Ucar [aut] (<https://orcid.org/0000-0001-6403-5550>),\n  Thomas Lin Pedersen [ctb]",
         "Maintainer": "Edzer Pebesma <edzer.pebesma@uni-muenster.de>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-02-05 00:50:02 UTC",
-        "Built": "R 4.2.1; x86_64-w64-mingw32; 2022-09-13 01:30:11 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 17:14:04 UTC; unix"
       }
     },
     "utf8": {
@@ -3417,13 +3287,11 @@
         "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
         "Repository": "CRAN",
         "Date/Publication": "2021-07-24 15:00:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:48 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:24:59 UTC; unix"
       }
     },
     "vctrs": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "vctrs",
@@ -3448,15 +3316,13 @@
         "Packaged": "2022-11-14 14:08:25 UTC; lionel",
         "Author": "Hadley Wickham [aut],\n  Lionel Henry [aut, cre],\n  Davis Vaughan [aut],\n  data.table team [cph] (Radix sort based on data.table's forder() and\n    their contribution to R's order()),\n  RStudio [cph]",
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-16 08:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 02:53:48 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-23 19:58:40 UTC; unix"
       }
     },
     "viridis": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "viridis",
@@ -3479,13 +3345,13 @@
         "NeedsCompilation": "no",
         "Packaged": "2021-10-13 12:03:30 UTC; simon",
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Antônio Pedro Camargo [ctb, cph],\n  Cédric Scherer [ctb, cph]",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2021-10-13 20:50:02 UTC",
-        "Built": "R 4.2.0; ; 2022-05-07 01:00:27 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:13 UTC; unix"
       }
     },
     "viridisLite": {
-      "Source": "RSPM",
+      "Source": "CRAN",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "viridisLite",
@@ -3505,9 +3371,9 @@
         "NeedsCompilation": "no",
         "Packaged": "2022-08-22 13:36:57 UTC; simon",
         "Author": "Simon Garnier [aut, cre],\n  Noam Ross [ctb, cph],\n  Bob Rudis [ctb, cph],\n  Marco Sciaini [ctb, cph],\n  Antônio Pedro Camargo [ctb, cph],\n  Cédric Scherer [ctb, cph]",
-        "Repository": "RSPM",
+        "Repository": "CRAN",
         "Date/Publication": "2022-08-22 14:20:03 UTC",
-        "Built": "R 4.2.0; ; 2022-10-19 21:02:46 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:27:27 UTC; unix"
       }
     },
     "waiter": {
@@ -3534,7 +3400,7 @@
         "Maintainer": "John Coene <jcoenep@gmail.com>",
         "Repository": "RSPM",
         "Date/Publication": "2022-01-03 14:30:02 UTC",
-        "Built": "R 4.2.0; ; 2022-04-22 21:49:20 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-04-21 23:13:50 UTC; unix"
       }
     },
     "waldo": {
@@ -3561,7 +3427,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-03-16 22:20:04 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 04:34:29 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:45 UTC; unix"
       }
     },
     "withr": {
@@ -3591,7 +3457,7 @@
         "Maintainer": "Lionel Henry <lionel@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2022-03-03 21:50:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:40 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:26:04 UTC; unix"
       }
     },
     "wk": {
@@ -3619,13 +3485,11 @@
         "Author": "Dewey Dunnington [aut, cre] (<https://orcid.org/0000-0002-9415-4582>),\n  Edzer Pebesma [aut] (<https://orcid.org/0000-0001-8049-7069>)",
         "Repository": "RSPM",
         "Date/Publication": "2022-10-13 03:30:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-28 14:47:34 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 17:13:24 UTC; unix"
       }
     },
     "xfun": {
-      "Source": "CRAN",
+      "Source": "RSPM",
       "Repository": "https://packagemanager.rstudio.com/all/latest",
       "description": {
         "Package": "xfun",
@@ -3646,16 +3510,14 @@
         "Packaged": "2022-11-16 18:00:46 UTC; yihui",
         "Author": "Yihui Xie [aut, cre, cph] (<https://orcid.org/0000-0003-0645-5666>),\n  Wush Wu [ctb],\n  Daijiang Li [ctb],\n  Xianying Tan [ctb],\n  Salim Brüggemann [ctb] (<https://orcid.org/0000-0002-5329-5987>),\n  Christophe Dervieux [ctb]",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Repository": "CRAN",
+        "Repository": "RSPM",
         "Date/Publication": "2022-11-16 19:20:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:46 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-04-24 08:59:49 UTC; unix"
       }
     },
     "xml2": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.rstudio.com/all/latest",
+      "Repository": "https://cloud.r-project.org",
       "description": {
         "Package": "xml2",
         "Title": "Parse XML",
@@ -3679,9 +3541,7 @@
         "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
         "Repository": "CRAN",
         "Date/Publication": "2021-11-30 14:40:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-13 01:35:57 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:31:22 UTC; unix"
       }
     },
     "xmlparsedata": {
@@ -3706,7 +3566,7 @@
         "Packaged": "2021-03-06 10:52:40 UTC; gaborcsardi",
         "Repository": "CRAN",
         "Date/Publication": "2021-03-06 11:10:02 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:39:01 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:31:28 UTC; unix"
       }
     },
     "xtable": {
@@ -3731,7 +3591,7 @@
         "Packaged": "2019-04-21 10:56:51 UTC; dsco036",
         "Author": "David B. Dahl [aut],\n  David Scott [aut, cre],\n  Charles Roosen [aut],\n  Arni Magnusson [aut],\n  Jonathan Swinton [aut],\n  Ajay Shah [ctb],\n  Arne Henningsen [ctb],\n  Benno Puetz [ctb],\n  Bernhard Pfaff [ctb],\n  Claudio Agostinelli [ctb],\n  Claudius Loehnert [ctb],\n  David Mitchell [ctb],\n  David Whiting [ctb],\n  Fernando da Rosa [ctb],\n  Guido Gay [ctb],\n  Guido Schulz [ctb],\n  Ian Fellows [ctb],\n  Jeff Laake [ctb],\n  John Walker [ctb],\n  Jun Yan [ctb],\n  Liviu Andronic [ctb],\n  Markus Loecher [ctb],\n  Martin Gubri [ctb],\n  Matthieu Stigler [ctb],\n  Robert Castelo [ctb],\n  Seth Falcon [ctb],\n  Stefan Edwards [ctb],\n  Sven Garbade [ctb],\n  Uwe Ligges [ctb]",
         "Date/Publication": "2019-04-21 12:20:03 UTC",
-        "Built": "R 4.2.2; ; 2022-12-13 01:35:39 UTC; windows"
+        "Built": "R 4.3.0; ; 2023-05-30 08:38:25 UTC; unix"
       }
     },
     "yaml": {
@@ -3754,18 +3614,16 @@
         "Packaged": "2022-10-17 18:13:24 UTC; garbetsp",
         "Repository": "CRAN",
         "Date/Publication": "2022-10-18 08:30:02 UTC",
-        "Built": "R 4.2.2; x86_64-w64-mingw32; 2022-12-06 01:40:25 UTC; windows",
-        "ExperimentalWindowsRuntime": "ucrt",
-        "Archs": "x64"
+        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-05-30 08:25:43 UTC; unix"
       }
     }
   },
   "files": {
     ".Rprofile": {
-      "checksum": "2867dbd3270cf0286bdac0b59650a81a"
+      "checksum": "f14dc1c6a4f3b1f962a53a3f52e453a1"
     },
     "app.R": {
-      "checksum": "2fe139690e99f130ad54a180279fadea"
+      "checksum": "d4103b4dcc8bebfefd99294ba6125f11"
     },
     "app/data/event_data.fst": {
       "checksum": "0aacb06fae6273068d27d0e8befd5d8c"
@@ -3777,16 +3635,16 @@
       "checksum": "0753f5ce307932ce205033deed6b1ff8"
     },
     "app/data/map_data.dbf": {
-      "checksum": "6532310a9b0debdab7e3798d88dce6ed"
+      "checksum": "68c8345b184be53af370593818a0c335"
     },
     "app/data/map_data.prj": {
-      "checksum": "b101627a47b6c34fba72527fb942f311"
+      "checksum": "c742bee3d4edfc2948a2ad08de1790a5"
     },
     "app/data/map_data.shp": {
-      "checksum": "3318eeeb2ebd9d21f0746bd3021c2324"
+      "checksum": "fd7c1b29b925660f0581b1bc7dd68c3b"
     },
     "app/data/map_data.shx": {
-      "checksum": "c72434917f5195482fb980003269c7b7"
+      "checksum": "5ebffa18e64ed1084dd105cc6aed0680"
     },
     "app/data/medal_data.fst": {
       "checksum": "dc0120362b4fc53d6df7a0822ae1919e"
@@ -3801,25 +3659,25 @@
       "checksum": "8b4f15979c98b837d5031cbab76f32a7"
     },
     "app/js/index.js": {
-      "checksum": "6a77a1f92a61cfa3f1f7520309fac638"
+      "checksum": "fa56e255587c64bb20d66d065b3ec83e"
     },
     "app/logic/__init__.R": {
-      "checksum": "4dd5e2f6db7641f778a424c08db5870e"
+      "checksum": "fc31f56f5159ebec4d48b75df266087e"
     },
     "app/logic/leaflet_proxy_helpers.R": {
-      "checksum": "5b39f578b0b50da09066c6eed1a57eed"
+      "checksum": "bd2670b495dcb8f034918f57b72236a3"
     },
     "app/logic/update_map.R": {
-      "checksum": "df589982e6d781a8f7d4ba20c6975546"
+      "checksum": "9384a075e34b44cbd15e6768e0a849b5"
     },
     "app/logic/utils.R": {
-      "checksum": "c593e6fbbfa9d56edcc2a51e5a9f5161"
+      "checksum": "9109bd424c4d71e973a46fc8170a2848"
     },
     "app/main.R": {
-      "checksum": "33b50d5eef49adf8e1c580e44bb76b5b"
+      "checksum": "a4201366bb9bd46bdbb4a20fab31e6f2"
     },
     "app/static/css/app.min.css": {
-      "checksum": "4c683272933d95720ccd91f2762f1973"
+      "checksum": "5dd8f11aee733c14b39af1d196ba869a"
     },
     "app/static/favicon.ico": {
       "checksum": "c55b0bf1d9a21ac2cca0c6b475eac61f"
@@ -3834,55 +3692,58 @@
       "checksum": "16801137824408e4f52797247ca929a2"
     },
     "app/static/js/app.min.js": {
-      "checksum": "e76e2abf5bf0bc24ea8edf7d685c8aa8"
+      "checksum": "d29c3116f4effb87b150da8ea3a77068"
     },
     "app/static/logo.png": {
       "checksum": "902d28f507488e51623df76d93c9f654"
     },
+    "app/styles/_about_section.scss": {
+      "checksum": "a84c30866974033df2c9300796ebb41a"
+    },
     "app/styles/main.scss": {
-      "checksum": "b4e0f216c0f1206d7b02a394377868d8"
+      "checksum": "cc3c129f94914e1f12e8619df361c368"
     },
     "app/view/__init__.R": {
-      "checksum": "2c1c335083a2a1b6095a9e8244871330"
+      "checksum": "540e8404d0bf10a8237595023d99f5bb"
     },
     "app/view/about_section.R": {
-      "checksum": "2079e3091b95f5aa8ce952536d686ca0"
+      "checksum": "3c1ddb6af52b97b80285880f4a34027a"
     },
     "app/view/dropdowns.R": {
-      "checksum": "8135a76e5e3b98ab8c73040f3e3aca1f"
+      "checksum": "5bc8b3b35962fa4016f04efbe7e42b7b"
     },
     "app/view/info_plot.R": {
-      "checksum": "586ac2ffbe5564eb7b03bf135cbb5fe0"
+      "checksum": "f4d6a37966c2cd02c7816c3bd7afa6f3"
     },
     "app/view/info_text.R": {
-      "checksum": "abf45f450056200b5c3a2f3086eccfdb"
+      "checksum": "480877955fed9e2d8d0fa64bb7c3d4ef"
     },
     "app/view/map.R": {
-      "checksum": "6d4a38de826bcb32504e7b3de12bd023"
+      "checksum": "be3f02f0f7983776f620ac117509f55b"
     },
     "app/view/podium.R": {
-      "checksum": "5a824e4d756f577dcc49d6d407cc20e9"
+      "checksum": "dad7fc0be0370aae166af5cc95a011ce"
     },
     "app/view/timeline.R": {
-      "checksum": "95f5eba94f999fb223549feac163dc8a"
+      "checksum": "911d5268ce02f5459c5b007cb005b131"
     },
     "config.yml": {
-      "checksum": "3e1a71da884f70a03842c2c68b3e3c7a"
+      "checksum": "9799882392016756f11cef6df75df9c0"
     },
     "dependencies.R": {
-      "checksum": "6153b100f7db8b580e0dc1654823656b"
+      "checksum": "c15b40b769d378adf5cb25d0bd652853"
     },
     "docker/shiny-server.conf": {
-      "checksum": "c0df4290dd7b662a8d482447f1df7d82"
+      "checksum": "6e8c5e6bf664543a23f2c1c02fb9662c"
     },
     "Dockerfile": {
-      "checksum": "c667f941ef1e7a4fcace2518576d02b5"
+      "checksum": "ceb27ac1d92489723af12f70541b0b16"
     },
     "README.md": {
-      "checksum": "caaff1d7d4ba1e834bf9669a24e39b0a"
+      "checksum": "a5e677391bbe5183cb24ec6e587c486e"
     },
     "rhino.yml": {
-      "checksum": "82b3d2a62d8c06d892ca60dbef8e4bab"
+      "checksum": "4f8295c6437069d07ae84698aca26c76"
     },
     "scripts/flags/ad.png": {
       "checksum": "384e9845debe9aca8f8586d9bedcb7e6"
@@ -4650,28 +4511,25 @@
       "checksum": "d6486e2bf0b8c3a4a1ded4156574f16c"
     },
     "scripts/generate_data.R": {
-      "checksum": "5865695837f37e50cd32471a8e400e2a"
+      "checksum": "b83c4366034e7bab62ce97da2472d675"
     },
     "scripts/get_countries_map_data.R": {
-      "checksum": "106e6a39e5f762880911df7ffc0f2f8b"
+      "checksum": "550a36182167ed6281adf45b155bb90b"
     },
     "scripts/preprocess.R": {
-      "checksum": "ac8c822b42f802be9a78925bd441ed79"
+      "checksum": "7235b7721345b2da77bca954fbba4813"
     },
     "scripts/raw_data/athlete_events.csv": {
-      "checksum": "98aca5d462b9a1465b35ca772d5eeffd"
-    },
-    "scripts/raw_data/ne_50m_admin_0_countries.zip": {
-      "checksum": "2c7e899276a9402d0781b2cf246c75e2"
+      "checksum": "0bc03c2675facff95dcdb2ac1c520595"
     },
     "scripts/summarize_countries.R": {
-      "checksum": "dc1997e0bdd740086d6715e94e9cf2cc"
+      "checksum": "88f6b78c8b48f186e129605b37635158"
     },
     "scripts/summarize_events.R": {
-      "checksum": "10bbac06e3e3adacf772921cb2d4ecd0"
+      "checksum": "c253ec78977d7c7567ab09ca69338dff"
     },
     "scripts/summarize_games.R": {
-      "checksum": "01bc8c646b0f916784769a10638a2386"
+      "checksum": "8faa0b2bb58031224f270c64c1564591"
     }
   },
   "users": null
