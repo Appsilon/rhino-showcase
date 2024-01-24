@@ -1227,9 +1227,9 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.4.0",
+      "Version": "1.6.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "box",
@@ -1250,7 +1250,7 @@
         "withr",
         "yaml"
       ],
-      "Hash": "4033065e4cfd8171910d0fe2ab51bde1"
+      "Hash": "ff605bc0e89a93b4ccf76f565bc1cdfc"
     },
     "rlang": {
       "Package": "rlang",
