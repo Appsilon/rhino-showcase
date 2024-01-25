@@ -2,7 +2,6 @@ $dark-blue: #050c31;
 $light-blue: #dbf1ff;
 $aps-blue: #0099f9;
 $brown: #c4c4c4;
-
 $card-bg-color: #172c40;
 $card-border-color: #ededed;
 $card-content-clr: #ecf5ff;
@@ -14,6 +13,7 @@ $aps-smry-color: #244059;
   background: transparent;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .ms-Modal.is-open.root-192 {
   top: 3rem;
 }
@@ -85,8 +85,7 @@ $aps-smry-color: #244059;
     font-family: "Maven Pro", sans-serif;
     font-style: normal;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin: 0.8em 0;
 
     & i {
@@ -95,8 +94,7 @@ $aps-smry-color: #244059;
 
     & .tag-item {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       align-items: center;
       padding: 0.5em 0.75em;
       margin-right: 0.5em;
@@ -152,7 +150,7 @@ $aps-smry-color: #244059;
       gap: 1.1em;
       background: $card-bg-color;
       border: 0.1em solid $card-border-color;
-      box-shadow: 0 1em 2em rgba(0, 0, 0, 0.02);
+      box-shadow: 0 1em 2em rgb(0 0 0 / 2%);
       border-radius: 1em;
     }
 
@@ -246,8 +244,7 @@ $aps-smry-color: #244059;
 
   .appsilon-card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding: 0.5em;

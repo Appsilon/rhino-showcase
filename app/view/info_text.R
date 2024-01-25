@@ -14,7 +14,7 @@ ui <- function(id) {
 
   list(
     segment(
-      class = "raised title_section",
+      class = "raised title-section",
       h3(
         style = "text-align: left;",
         textOutput(ns("info_title"))
