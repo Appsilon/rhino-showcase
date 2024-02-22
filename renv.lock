@@ -1227,9 +1227,14 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.6.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
+      "Version": "1.6.0.9007",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "Appsilon",
+      "RemoteRepo": "rhino",
+      "RemoteRef": "4009a24ef3a666411c88f37d70de2dd590b2aafc",
+      "RemoteSha": "4009a24ef3a666411c88f37d70de2dd590b2aafc",
       "Requirements": [
         "R",
         "box",
@@ -1248,9 +1253,10 @@
         "testthat",
         "utils",
         "withr",
+        "xml2",
         "yaml"
       ],
-      "Hash": "ff605bc0e89a93b4ccf76f565bc1cdfc"
+      "Hash": "649579008ebe1e5b8308a63f6f49a3b4"
     },
     "rlang": {
       "Package": "rlang",
