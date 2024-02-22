@@ -192,6 +192,24 @@
       ],
       "Hash": "ce8187a260e8e3abc2294284badc3b76"
     },
+    "box.linters": {
+      "Package": "box.linters",
+      "Version": "0.9.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "fs",
+        "glue",
+        "lintr",
+        "rlang",
+        "stringr",
+        "xml2",
+        "xmlparsedata"
+      ],
+      "Hash": "6178eaa9c568b6d6286a6c888bbb8eb6"
+    },
     "brio": {
       "Package": "brio",
       "Version": "1.1.3",
@@ -870,18 +888,16 @@
     },
     "lintr": {
       "Package": "lintr",
-      "Version": "3.0.2",
+      "Version": "3.1.2",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "backports",
         "codetools",
-        "crayon",
         "cyclocomp",
         "digest",
         "glue",
-        "jsonlite",
         "knitr",
         "rex",
         "stats",
@@ -889,7 +905,7 @@
         "xml2",
         "xmlparsedata"
       ],
-      "Hash": "b21ebd652d940f099915221f3328ab7b"
+      "Hash": "08cff46381a242d44c0d8dd0aabd9f71"
     },
     "logger": {
       "Package": "logger",
@@ -1227,12 +1243,13 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.6.0",
+      "Version": "1.9.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "box",
+        "box.linters",
         "cli",
         "config",
         "fs",
@@ -1250,7 +1267,7 @@
         "withr",
         "yaml"
       ],
-      "Hash": "ff605bc0e89a93b4ccf76f565bc1cdfc"
+      "Hash": "c78f7332dc588c31094daccd26513e83"
     },
     "rlang": {
       "Package": "rlang",
