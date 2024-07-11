@@ -1,8 +1,8 @@
 box::use(
   shiny,
   shiny.semantic[card],
-  plotly[...],
-  dplyr[filter, left_join, pull, first],
+  plotly,
+  dplyr[arrange, filter, left_join, pull, first],
   magrittr[`%>%`],
 )
 
@@ -19,7 +19,7 @@ ui <- function(id) {
     shiny$div(
       class = "description",
       shiny$div(class = "ui shiny$divider"),
-      plotlyOutput(ns("podium"), height = "100")
+      plotly$plotlyOutput(ns("podium"), height = "100")
     ),
     shiny$div(
       class = "meta",
@@ -46,8 +46,8 @@ server <- function(id, events_data, year, event_sport) {
     podium_data <- events_data %>%
       left_join(., flag_pos, by = "Medal")
 
-    output$podium <- renderPlotly({
-      plot_ly(
+    output$podium <- plotly$renderPlotly({
+      plotly$plot_ly(
         source = "podium",
         type = "bar"
       ) %>%
@@ -55,7 +55,7 @@ server <- function(id, events_data, year, event_sport) {
         add_podium_bar(., flag_pos[3, ]) %>%
         add_podium_bar(., flag_pos[1, ]) %>%
         customize_axes(.) %>%
-        layout(
+        plotly$layout(
           margin = list(t = 0, b = 0, l = 0, r = 0),
           yaxis = list(range = c(0, 6)),
           xaxis = list(range = c(-1, 5)),
@@ -87,7 +87,9 @@ server <- function(id, events_data, year, event_sport) {
         ifelse(is.na(this_event), "Select an event", this_event)
       })
     })
-    list(selected_podium_flag = shiny$reactive(event_data("plotly_click", source = "podium")$x),
-         podium_data = event_podium)
+    list(
+      selected_podium_flag = shiny$reactive(plotly$event_data("plotly_click", source = "podium")$x),
+      podium_data = event_podium
+    )
   })
 }

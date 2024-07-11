@@ -1,7 +1,7 @@
 box::use(
   shiny[moduleServer, NS, is.reactive, reactive, observeEvent, div],
   shiny.semantic[card],
-  plotly[...],
+  plotly,
   dplyr[filter, slice_head],
   magrittr[`%>%`],
 )
@@ -20,7 +20,7 @@ ui <- function(id) {
       class = "content",
       div(class = "header", "Medal Count"),
       div(class = "ui divider"),
-      div(class = "description", plotlyOutput(ns("info_plot"), height = "100px"))
+      div(class = "description", plotly$plotlyOutput(ns("info_plot"), height = "100px"))
     )
   )
 }
@@ -35,8 +35,8 @@ server <- function(id, year, medal_data) {
       year_medal_data <- medal_data %>%
         filter(Year == year()) %>%
         slice_head(n = 5)
-      output$info_plot <- renderPlotly({
-        plot_ly(
+      output$info_plot <- plotly$renderPlotly({
+        plotly$plot_ly(
           source = "info_plot",
           type = "bar", orientation = "h"
         ) %>%
@@ -44,7 +44,7 @@ server <- function(id, year, medal_data) {
           add_medal_trace(., x = year_medal_data$n_silver, name = "Silver", color = "#C0C0C0") %>%
           add_medal_trace(., x = year_medal_data$n_gold, name = "Gold", color = "#FFD700") %>%
           customize_axes(.) %>%
-          layout(
+          plotly$layout(
             margin = list(t = 0, b = 0, l = 50, r = 0),
             yaxis = list(autorange = "reversed"),
             images = make_flag_data(year_medal_data),
@@ -60,11 +60,11 @@ server <- function(id, year, medal_data) {
         filter(Year == year()) %>%
         slice_head(n = 5)
 
-      plotlyProxy("info_plot", session) %>%
-        plotlyProxyInvoke("animate", update_info_plot(year_medal_data))
+      plotly$plotlyProxy("info_plot", session) %>%
+        plotly$plotlyProxyInvoke("animate", update_info_plot(year_medal_data))
     })
 
-    reactive(medal_data[event_data("plotly_click", source = "info_plot")$y, ])
+    reactive(medal_data[plotly$event_data("plotly_click", source = "info_plot")$y, ])
   })
 }
 

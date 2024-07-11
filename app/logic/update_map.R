@@ -6,7 +6,7 @@ box::use(
 )
 
 box::use(
-  app/logic/leaflet_proxy_helpers[...],
+  app/logic/leaflet_proxy_helpers[set_shape_popup, set_shape_style],
 )
 
 #' @export

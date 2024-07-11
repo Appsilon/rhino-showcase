@@ -1,6 +1,6 @@
 box::use(
   shiny[moduleServer, NS, is.reactive, observeEvent, eventReactive],
-  leaflet[...],
+  leaflet,
   htmlwidgets[onRender, JS],
   dplyr[filter, select, left_join, case_when, mutate],
   magrittr[`%>%`],
@@ -8,14 +8,14 @@ box::use(
 )
 
 box::use(
-  app/logic/update_map[...],
+  app/logic/update_map[update_markers, update_polygon_colors, zoom_in_country],
 )
 
 #' @export
 ui <- function(id) {
   ns <- NS(id)
 
-  leafletOutput(ns("map"), width = "99%", height = "100%")
+  leaflet$leafletOutput(ns("map"), width = "99%", height = "100%")
 }
 
 #' @export
@@ -30,24 +30,24 @@ server <- function(id, map_data, medal_data, event_podium, year) {
       filter(Year == 0) %>%
       select(Country, ISO3c)
 
-    output$map <- renderLeaflet({
-      leaflet(
+    output$map <- leaflet$renderLeaflet({
+      leaflet$leaflet(
         data = map_data,
-        options = leafletOptions(
+        options = leaflet$leafletOptions(
           preferCanvas = TRUE,
           zoomControl = FALSE,
           minZoom = 2,
           attributionControl = TRUE
         )
       ) %>%
-        setView(lng = 10, lat = 25, zoom = 2) %>%
-        addProviderTiles(providers$CartoDB.VoyagerNoLabels,
-          options = providerTileOptions(
+        leaflet$setView(lng = 10, lat = 25, zoom = 2) %>%
+        leaflet$addProviderTiles(leaflet$providers$CartoDB.VoyagerNoLabels,
+          options = leaflet$providerTileOptions(
             updateWhenZooming = FALSE,
             updateWhenIdle = FALSE
           )
         ) %>%
-        addPolygons(
+        leaflet$addPolygons(
           layerId = ~ISO3c,
           color = "black",
           fillColor = "#e2e2e2",
@@ -57,7 +57,7 @@ server <- function(id, map_data, medal_data, event_podium, year) {
           popup = "",
           smoothFactor = 1,
           fillOpacity = 1,
-          highlightOptions = highlightOptions(
+          highlightOptions = leaflet$highlightOptions(
             color = "white",
             weight = 2,
             dashArray = "",
@@ -65,8 +65,8 @@ server <- function(id, map_data, medal_data, event_podium, year) {
             bringToFront = FALSE
           )
         ) %>%
-        addEasyButton(
-          easyButton(
+        leaflet$addEasyButton(
+          leaflet$easyButton(
             position = "topleft",
             icon = "ion-arrow-shrink",
             title = "Reset location",
@@ -76,14 +76,14 @@ server <- function(id, map_data, medal_data, event_podium, year) {
         onRender(
           JS("function(el, x) {var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}") # nolint
         ) %>%
-        addLegend("bottomleft",
+        leaflet$addLegend("bottomleft",
           layerId = "legend_np",
           colors = "#e2e2e2",
           labels = "Non-participating"
         ) %>%
-        addLayersControl(
+        leaflet$addLayersControl(
           overlayGroups = c("Medal Count", "Event Medals"),
-          options = layersControlOptions(collapsed = FALSE)
+          options = leaflet$layersControlOptions(collapsed = FALSE)
         )
     })
 

@@ -1,5 +1,5 @@
 box::use(
-  shiny[...],
+  shiny,
   shiny.semantic[create_modal, modal],
 )
 
@@ -14,9 +14,9 @@ create_image_path <- function(path) {
 
 topic_section <- function(header,
                           description) {
-  div(
-    h4(class = "about-header", header),
-    div(
+  shiny$div(
+    shiny$h4(class = "about-header", header),
+    shiny$div(
       class = "about-descr",
       description
     )
@@ -24,10 +24,10 @@ topic_section <- function(header,
 }
 
 tag <- function(tag_string, hyperlink) {
-  div(
+  shiny$div(
     class = "tag-item",
-    icon("link"),
-    a(
+    shiny$icon("link"),
+    shiny$a(
       href = hyperlink,
       target = "_blank",
       rel = "noopener noreferrer",
@@ -40,27 +40,27 @@ card <- function(href_link,
                  img_link,
                  card_header,
                  card_text) {
-  div(
+  shiny$div(
     class = "card-package",
-    a(
+    shiny$a(
       class = "card-img",
       href = href_link,
       target = "_blank",
       rel = "noopener noreferrer",
-      img(
+      shiny$img(
         src = img_link,
         alt = card_header
       )
     ),
-    div(
+    shiny$div(
       class = "card-heading",
       card_header
     ),
-    div(
+    shiny$div(
       class = "card-content",
       card_text
     ),
-    a(
+    shiny$a(
       class = "card-footer",
       href = href_link,
       target = "_blank",
@@ -71,14 +71,14 @@ card <- function(href_link,
 }
 
 empty_card <- function() {
-  div(
+  shiny$div(
     class = "card-empty",
-    a(
+    shiny$a(
       href = "https://shiny.tools/#rhino",
       target = "_blank",
       rel = "noopener noreferrer",
-      icon("arrow-circle-right"),
-      div(
+      shiny$icon("arrow-circle-right"),
+      shiny$div(
         class = "card-empty-caption",
         "More Appsilon Technologies"
       )
@@ -87,21 +87,21 @@ empty_card <- function() {
 }
 
 appsilon <- function() {
-  div(
+  shiny$div(
     class = "appsilon-card",
-    div(
+    shiny$div(
       class = "appsilon-pic",
-      a(
+      shiny$a(
         href = "https://appsilon.com/",
         target = "_blank",
         rel = "noopener noreferrer",
-        img(
+        shiny$img(
           src = create_image_path("appsilon-logo.png"),
           alt = "Appsilon"
         )
       )
     ),
-    div(
+    shiny$div(
       class = "appsilon-summary",
       "We create, maintain, and develop Shiny applications
       for enterprise customers all over the world. Appsilon
@@ -117,16 +117,16 @@ appsilon <- function() {
 
 #' @export
 ui <- function(id) {
-  ns <- NS(id)
+  ns <- shiny$NS(id)
 
-  tagList(
-    div(
+  shiny$tagList(
+    shiny$div(
       id = "info",
       class = "info",
-      icon("info-circle")
+      shiny$icon("info-circle")
     ),
-    tags$script(
-      HTML(
+    shiny$tags$script(
+      shiny$HTML(
         sprintf(
           fmt = "$('#info').click(() => {
             Shiny.setInputValue('%s', 'event', { priority: 'event'})
@@ -140,17 +140,17 @@ ui <- function(id) {
 
 #' @export
 server <- function(id) {
-  moduleServer(id, function(input, output, session) {
+  shiny$moduleServer(id, function(input, output, session) {
     ns <- session$ns
 
-    observeEvent(input$open_modal, {
+    shiny$observeEvent(input$open_modal, {
       create_modal(
         modal(
           id = "main_about_page",
           header = "Olympic Games",
-          div(
+          shiny$div(
             class = "modal-dialog",
-            div(
+            shiny$div(
               class = "about-section",
               topic_section(
                 header = "About the project",
@@ -163,7 +163,7 @@ server <- function(id) {
                 name, region, year and ranking etc... If you want to dive deeper
                 into the dataset please visit the links below."
               ),
-              div(
+              shiny$div(
                 class = "about-tag",
                 tag(
                   tag_string = "kaggle dataset",
@@ -177,13 +177,13 @@ server <- function(id) {
                   hyperlink = "https://olympics.com/en/sports/"
                 )
               ),
-              hr(),
-              div(
-                h4(
+              shiny$hr(),
+              shiny$div(
+                shiny$h4(
                   class = "about-header",
                   "Powered by"
                 ),
-                div(
+                shiny$div(
                   class = "card-section",
                   card(
                     href_link = "https://appsilon.github.io/shiny.semantic/",
