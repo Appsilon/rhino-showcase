@@ -46,7 +46,7 @@ server <- function(id, timeline_data) {
     overall_ix <- reactiveVal(TRUE)
 
     output$timeline <- plotly$renderPlotly({
-      timeline_plot <- timeline_data %>%
+      timeline_data %>%
         plotly$plot_ly(
           source = "timeline",
           type = "scatter",
