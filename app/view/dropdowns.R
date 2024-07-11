@@ -2,11 +2,11 @@ box::use(
   shiny[moduleServer, observeEvent, NS, reactive, is.reactive, h4, div],
   shiny.semantic[update_dropdown_input, vertical_layout],
   dplyr[distinct, filter, pull],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
 )
 
 box::use(
-  app/logic/utils[make_dropdown]
+  app/logic/utils[make_dropdown],
 )
 
 #' @export

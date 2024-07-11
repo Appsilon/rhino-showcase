@@ -4,12 +4,12 @@ box::use(
   magrittr[`%>%`],
   leaflet[
     colorNumeric, popupOptions, leafletProxy, setView, removePopup,
-    addLegend, addCircleMarkers, clearGroup, markerClusterOptions, clearPopups
-  ]
+    addLegend, addCircleMarkers, clearGroup, markerClusterOptions, clearPopups,
+  ],
 )
 
 box::use(
-  app/logic/leaflet_proxy_helpers[...]
+  app/logic/leaflet_proxy_helpers[...],
 )
 
 #' @export

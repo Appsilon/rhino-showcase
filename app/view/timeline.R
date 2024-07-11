@@ -1,16 +1,16 @@
 box::use(
   shiny[
     moduleServer, NS, div, reactive,
-    observeEvent, reactiveVal
+    observeEvent, reactiveVal,
   ],
   shiny.semantic[card, cards],
   plotly[...],
   dplyr[mutate, pull],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
 )
 
 box::use(
-  app/logic/utils[customize_axes, update_timeline_colors]
+  app/logic/utils[customize_axes, update_timeline_colors],
 )
 
 #' @export

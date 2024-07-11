@@ -9,7 +9,7 @@ box::use(
   app/logic/utils[
     loading_screen,
     make_dropdown,
-  ]
+  ],
 )
 
 # loading_screen --------------------------------------------------------------

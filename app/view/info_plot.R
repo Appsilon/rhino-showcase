@@ -3,11 +3,11 @@ box::use(
   shiny.semantic[card],
   plotly[...],
   dplyr[filter, slice_head],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
 )
 
 box::use(
-  app/logic/utils[add_medal_trace, customize_axes, make_flag_data]
+  app/logic/utils[add_medal_trace, customize_axes, make_flag_data],
 )
 
 #' @export

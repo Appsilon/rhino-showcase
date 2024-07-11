@@ -4,11 +4,11 @@ box::use(
   htmlwidgets[onRender, JS],
   dplyr[filter, select, left_join, case_when, mutate],
   magrittr[`%>%`],
-  glue[glue]
+  glue[glue],
 )
 
 box::use(
-  app/logic/update_map[...]
+  app/logic/update_map[...],
 )
 
 #' @export

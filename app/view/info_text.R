@@ -2,7 +2,7 @@ box::use(
   shiny[...],
   shiny.semantic[header, card, cards, segment],
   dplyr[filter],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
 )
 
 box::use(

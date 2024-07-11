@@ -1,5 +1,5 @@
 box::use(
-  leaflet[...]
+  leaflet[...],
 )
 
 #' @export

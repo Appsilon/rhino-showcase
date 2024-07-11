@@ -6,7 +6,7 @@ box::use(
   plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
   magrittr[`%>%`],
   dplyr[n, select, mutate],
-  purrr[pmap]
+  purrr[pmap],
 )
 
 #' @export

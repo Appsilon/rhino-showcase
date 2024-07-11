@@ -1,16 +1,16 @@
 box::use(
   shiny[
     moduleServer, NS, div, is.reactive, HTML, reactive,
-    observeEvent, eventReactive, renderText, textOutput
+    observeEvent, eventReactive, renderText, textOutput,
   ],
   shiny.semantic[card],
   plotly[...],
   dplyr[filter, left_join, pull, first],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
 )
 
 box::use(
-  app/logic/utils[customize_axes, update_podium_flags, reset_podium_flags, add_podium_bar]
+  app/logic/utils[customize_axes, update_podium_flags, reset_podium_flags, add_podium_bar],
 )
 
 #' @export
