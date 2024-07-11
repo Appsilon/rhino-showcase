@@ -92,14 +92,14 @@ server <- function(id, map_data, medal_data, event_podium, year) {
     })
     marker_data <- eventReactive(event_podium$podium_data(), {
       event_podium$podium_data() %>%
-        mutate(popup_base = glue("<strong>{Country}</strong><br>{Sport} - {Event_short}<br>"),
-               popup = case_when(
-                 Year != 0 ~ glue("{popup_base}{Game}"),
-          TRUE ~ glue("{popup_base}Rank <b>#{-1*(y)+ 4}</b> - Most gold medals won overall")
-        )) %>%
-        left_join(., map_data %>% select(ISO3c, cnt_LON, cnt_LAT),
-                  by = "ISO3c"
-        )
+        mutate(
+          popup_base = glue("<strong>{Country}</strong><br>{Sport} - {Event_short}<br>"),
+          popup = case_when(
+            Year != 0 ~ glue("{popup_base}{Game}"),
+            TRUE ~ glue("{popup_base}Rank <b>#{-1*(y)+ 4}</b> - Most gold medals won overall")
+          )
+        ) %>%
+        left_join(., map_data %>% select(ISO3c, cnt_LON, cnt_LAT), by = "ISO3c")
     })
     observeEvent(marker_data(), ignoreInit = TRUE, {
       update_markers("map", marker_data())

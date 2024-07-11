@@ -81,7 +81,7 @@ server <- function(id, events_data, year, event_sport) {
     })
 
     observeEvent(event_podium(), {
-     update_podium_flags("podium", session, event_podium())
+      update_podium_flags("podium", session, event_podium())
 
       output$card_title <- renderText({
         this_event <- event_podium() %>%

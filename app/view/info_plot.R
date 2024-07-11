@@ -74,7 +74,8 @@ update_info_plot <- function(data) {
     data = list(
       list(x = data$n_bronze),
       list(x = data$n_silver),
-      list(x = data$n_gold)),
+      list(x = data$n_gold)
+    ),
     traces = list(1, 2, 3),
     layout = list(
       xaxis = list(

@@ -134,14 +134,15 @@ update_podium_flags <- function(plot_id, session, data) {
       yref = "y", sizey = 1, yanchor = "bottom", y = y + 0.5
     )
   plotlyProxy(plot_id, session) %>%
-    plotlyProxyInvoke("animate",
-                      layout = list(
-                        images = pmap(flag_data, make_flags)),
-                      traces = as.list(seq(1, 6)),
-                      data = list(
-                        list(text = data$Country[data$x == 2]), list(),
-                        list(text = data$Country[data$x == 1]), list(),
-                        list(text = data$Country[data$x == 3]), list())
+    plotlyProxyInvoke(
+      "animate",
+      layout = list(images = pmap(flag_data, make_flags)),
+      traces = as.list(seq(1, 6)),
+      data = list(
+        list(text = data$Country[data$x == 2]), list(),
+        list(text = data$Country[data$x == 1]), list(),
+        list(text = data$Country[data$x == 3]), list()
+      )
     )
 }
 

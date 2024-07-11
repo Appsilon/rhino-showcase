@@ -19,7 +19,7 @@ ui <- function(id) {
         style = "text-align: left;",
         textOutput(ns("info_title"))
       ),
-    about_section$ui(ns("about_section"))
+      about_section$ui(ns("about_section"))
     ),
     div(class = "ui divider"),
     div(class = "ui container", htmlOutput(ns("game_info")))
