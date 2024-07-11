@@ -1,12 +1,9 @@
 box::use(
-  shiny[
-    moduleServer, NS, div, reactive,
-    observeEvent, reactiveVal,
-  ],
-  shiny.semantic[card, cards],
-  plotly,
   dplyr[mutate, pull],
   magrittr[`%>%`],
+  plotly,
+  shiny.semantic[card, cards],
+  shiny[div, moduleServer, NS, observeEvent, reactive, reactiveVal],
 )
 
 box::use(

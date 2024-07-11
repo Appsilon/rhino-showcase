@@ -1,13 +1,13 @@
 box::use(
+  dplyr[arrange, filter, first, left_join, pull],
+  magrittr[`%>%`],
+  plotly,
   shiny,
   shiny.semantic[card],
-  plotly,
-  dplyr[arrange, filter, left_join, pull, first],
-  magrittr[`%>%`],
 )
 
 box::use(
-  app/logic/utils[customize_axes, update_podium_flags, reset_podium_flags, add_podium_bar],
+  app/logic/utils[add_podium_bar, customize_axes, reset_podium_flags, update_podium_flags],
 )
 
 #' @export

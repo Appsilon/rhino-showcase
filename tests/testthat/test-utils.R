@@ -1,8 +1,8 @@
 box::use(
+  shiny.semantic[dropdown_input],
+  shiny[div, img, tagList],
   testthat[...], # nolint
   waiter[waiter_preloader],
-  shiny[img, div, tagList],
-  shiny.semantic[dropdown_input],
 )
 
 box::use(

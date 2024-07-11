@@ -1,12 +1,12 @@
 box::use(
   checkmate[assert_string, assert_vector],
-  waiter[waiter_preloader],
-  shiny[img, div, tagList],
-  shiny.semantic[dropdown_input],
-  plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
+  dplyr[mutate, n, select],
   magrittr[`%>%`],
-  dplyr[n, select, mutate],
+  plotly[add_bars, add_trace, config, layout, plotlyProxy, plotlyProxyInvoke],
   purrr[pmap],
+  shiny.semantic[dropdown_input],
+  shiny[div, img, tagList],
+  waiter[waiter_preloader],
 )
 
 #' @export

@@ -1,8 +1,8 @@
 box::use(
-  dplyr[bind_rows, select, filter, mutate, case_when, setdiff],
+  dplyr[bind_rows, case_when, filter, mutate, select, setdiff],
   glue[glue],
-  magrittr[`%>%`],
   leaflet,
+  magrittr[`%>%`],
 )
 
 box::use(

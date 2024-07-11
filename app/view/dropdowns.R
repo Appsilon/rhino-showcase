@@ -1,8 +1,8 @@
 box::use(
-  shiny[moduleServer, observeEvent, NS, reactive, is.reactive, h4, div],
-  shiny.semantic[update_dropdown_input, vertical_layout],
   dplyr[distinct, filter, pull],
   magrittr[`%>%`],
+  shiny.semantic[update_dropdown_input, vertical_layout],
+  shiny[div, h4, is.reactive, moduleServer, NS, observeEvent, reactive],
 )
 
 box::use(

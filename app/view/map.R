@@ -1,10 +1,10 @@
 box::use(
-  shiny[moduleServer, NS, is.reactive, observeEvent, eventReactive],
-  leaflet,
-  htmlwidgets[onRender, JS],
-  dplyr[filter, select, left_join, case_when, mutate],
-  magrittr[`%>%`],
+  dplyr[case_when, filter, left_join, mutate, select],
   glue[glue],
+  htmlwidgets[JS, onRender],
+  leaflet,
+  magrittr[`%>%`],
+  shiny[eventReactive, is.reactive, moduleServer, NS, observeEvent],
 )
 
 box::use(
