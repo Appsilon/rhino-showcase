@@ -1,8 +1,8 @@
 box::use(
-  shiny[...],
-  shiny.semantic[icon, header, card, cards, segment],
   dplyr[filter],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
+  shiny,
+  shiny.semantic[card, cards, header, segment],
 )
 
 box::use(
@@ -10,40 +10,40 @@ box::use(
 )
 #' @export
 ui <- function(id) {
-  ns <- NS(id)
+  ns <- shiny$NS(id)
 
   list(
     segment(
       class = "raised title-section",
-      h3(
+      shiny$h3(
         style = "text-align: left;",
-        textOutput(ns("info_title"))
+        shiny$textOutput(ns("info_title"))
       ),
-    about_section$ui(ns("about_section"))
+      about_section$ui(ns("about_section"))
     ),
-    div(class = "ui divider"),
-    div(class = "ui container", htmlOutput(ns("game_info")))
+    shiny$div(class = "ui divider"),
+    shiny$div(class = "ui container", shiny$htmlOutput(ns("game_info")))
   )
 }
 
 #' @export
 server <- function(id, year, game_data) {
-  stopifnot(is.reactive(year))
+  stopifnot(shiny$is.reactive(year))
   stopifnot(is.data.frame(game_data))
 
-  moduleServer(id, function(input, output, session) {
+  shiny$moduleServer(id, function(input, output, session) {
 
     about_section$server("about_section")
 
-    observeEvent(year(), {
+    shiny$observeEvent(year(), {
       this_game_data <- game_data %>%
-        dplyr::filter(Year == year())
+        filter(Year == year())
 
-      output$info_title <- renderText(
+      output$info_title <- shiny$renderText(
         ifelse(year() == 0, "All Olympic Games", this_game_data$Game)
       )
 
-      output$game_info <- renderUI({
+      output$game_info <- shiny$renderUI({
         cards(
           class = "three",
           make_info_card("Countries", "globe", this_game_data$n_countries),
@@ -59,11 +59,11 @@ server <- function(id, year, game_data) {
 make_info_card <- function(title = "", icon_name = "", number = NULL) {
   card(
     class = "ui fluid",
-    div(
+    shiny$div(
       class = "content",
-      div(class = "tiny header", title),
-      div(class = "ui divider"),
-      div(
+      shiny$div(class = "tiny header", title),
+      shiny$div(class = "ui divider"),
+      shiny$div(
         class = "description",
         header(as.character(number), "", icon_name)
       )

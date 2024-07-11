@@ -1,9 +1,9 @@
 box::use(
-  leaflet[...]
+  leaflet,
 )
 
 #' @export
-set_shape_style <- function(map, data = getMapData(map), layer_id,
+set_shape_style <- function(map, data = leaflet$getMapData(map), layer_id,
                             stroke = NULL, color = NULL, group = NULL,
                             weight = NULL, opacity = NULL,
                             fill = NULL, fill_color = NULL,
@@ -13,7 +13,7 @@ set_shape_style <- function(map, data = getMapData(map), layer_id,
   options <- c(
     list(layerId = layer_id),
     options,
-    filterNULL(list(
+    leaflet$filterNULL(list(
       stroke = stroke, color = color,
       weight = weight, opacity = opacity,
       fill = fill, fillColor = fill_color,
@@ -22,47 +22,47 @@ set_shape_style <- function(map, data = getMapData(map), layer_id,
     ))
   )
 
-  options <- evalFormula(options, data = data)
+  options <- leaflet$evalFormula(options, data = data)
   options <- do.call(data.frame, c(options, list(stringsAsFactors = FALSE)))
 
   layer_id <- options[[1]]
   style <- options[-1]
 
-  invokeMethod(map, data, "setStyle", "shape", layer_id, style)
+  leaflet$invokeMethod(map, data, "setStyle", "shape", layer_id, style)
 }
 
 #' @export
-set_shape_label <- function(map, data = getMapData(map), layer_id,
+set_shape_label <- function(map, data = leaflet$getMapData(map), layer_id,
                             label = NULL,
                             options = NULL) {
   options <- c(
     list(layerId = layer_id),
     options,
-    filterNULL(list(label = label))
+    leaflet$filterNULL(list(label = label))
   )
-  options <- evalFormula(options, data = data)
+  options <- leaflet$evalFormula(options, data = data)
   options <- do.call(data.frame, c(options, list(stringsAsFactors = FALSE)))
 
   layer_id <- options[[1]]
   label <- options[-1]
 
-  invokeMethod(map, data, "setLabel", "shape", layer_id, label)
+  leaflet$invokeMethod(map, data, "setLabel", "shape", layer_id, label)
 }
 
 #' @export
-set_shape_popup <- function(map, data = getMapData(map), layer_id,
+set_shape_popup <- function(map, data = leaflet$getMapData(map), layer_id,
                             popup = NULL,
                             options = NULL) {
   options <- c(
     list(layerId = layer_id),
     options,
-    filterNULL(list(popup = popup))
+    leaflet$filterNULL(list(popup = popup))
   )
-  options <- evalFormula(options, data = data)
+  options <- leaflet$evalFormula(options, data = data)
   options <- do.call(data.frame, c(options, list(stringsAsFactors = FALSE)))
 
   layer_id <- options[[1]]
   popup <- options[-1]
 
-  invokeMethod(map, data, "setPopup", "shape", layer_id, popup)
+  leaflet$invokeMethod(map, data, "setPopup", "shape", layer_id, popup)
 }

@@ -1,18 +1,18 @@
 box::use(
   fst[read_fst],
   sf[st_read],
-  shiny[moduleServer, NS, tags],
   shiny.semantic[grid, grid_template, semanticPage],
+  shiny[moduleServer, NS],
   waiter[use_waiter],
 )
 box::use(
+  app/logic/utils[loading_screen],
   app/view/dropdowns,
   app/view/info_plot,
   app/view/info_text,
   app/view/map,
   app/view/podium,
   app/view/timeline,
-  app/logic/utils[loading_screen],
 )
 
 #' @export

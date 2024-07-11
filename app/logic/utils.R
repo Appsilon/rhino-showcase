@@ -1,13 +1,12 @@
 box::use(
   checkmate[assert_string, assert_vector],
-  waiter[waiter_preloader],
-  shiny[img, div, br, tagList],
-  shiny.semantic[dropdown_input],
-  glue[glue],
-  plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
+  dplyr[mutate, n, select],
   magrittr[`%>%`],
-  dplyr[n, select, mutate],
-  purrr[map, pmap]
+  plotly[add_bars, add_trace, config, layout, plotlyProxy, plotlyProxyInvoke],
+  purrr[pmap],
+  shiny.semantic[dropdown_input],
+  shiny[div, img, tagList],
+  waiter[waiter_preloader],
 )
 
 #' @export
@@ -108,7 +107,7 @@ make_flag_data <- function(data) {
       x = 0, xref = "x",
       y = seq(1, n())
     ) %>%
-    dplyr::select(flag64, x, y) %>%
+    select(flag64, x, y) %>%
     pmap(., make_flags)
 }
 
@@ -129,20 +128,21 @@ make_flags <- function(flag64, x = 0, y = 0,
 #' @export
 update_podium_flags <- function(plot_id, session, data) {
   flag_data <- data %>%
-    dplyr::select(flag64, x, y) %>%
+    select(flag64, x, y) %>%
     mutate(
       xref = "x", sizex = 1.2, xanchor = "center",
       yref = "y", sizey = 1, yanchor = "bottom", y = y + 0.5
     )
   plotlyProxy(plot_id, session) %>%
-    plotlyProxyInvoke("animate",
-                      layout = list(
-                        images = pmap(flag_data, make_flags)),
-                      traces = as.list(seq(1, 6)),
-                      data = list(
-                        list(text = data$Country[data$x == 2]), list(),
-                        list(text = data$Country[data$x == 1]), list(),
-                        list(text = data$Country[data$x == 3]), list())
+    plotlyProxyInvoke(
+      "animate",
+      layout = list(images = pmap(flag_data, make_flags)),
+      traces = as.list(seq(1, 6)),
+      data = list(
+        list(text = data$Country[data$x == 2]), list(),
+        list(text = data$Country[data$x == 1]), list(),
+        list(text = data$Country[data$x == 3]), list()
+      )
     )
 }
 

@@ -1,23 +1,21 @@
 box::use(
-  shiny[moduleServer, NS, reactive, div, is.reactive, observeEvent, eventReactive],
-  leaflet[...],
-  shiny.semantic[card, segment],
-  htmlwidgets[onRender, JS],
-  dplyr[filter, select, left_join, case_when, mutate],
-  purrr[map],
+  dplyr[case_when, filter, left_join, mutate, select],
+  glue[glue],
+  htmlwidgets[JS, onRender],
+  leaflet,
   magrittr[`%>%`],
-  glue[glue]
+  shiny[eventReactive, is.reactive, moduleServer, NS, observeEvent],
 )
 
 box::use(
-  app/logic/update_map[...]
+  app/logic/update_map[update_markers, update_polygon_colors, zoom_in_country],
 )
 
 #' @export
 ui <- function(id) {
   ns <- NS(id)
 
-  leafletOutput(ns("map"), width = "99%", height = "100%")
+  leaflet$leafletOutput(ns("map"), width = "99%", height = "100%")
 }
 
 #' @export
@@ -29,27 +27,27 @@ server <- function(id, map_data, medal_data, event_podium, year) {
 
   moduleServer(id, function(input, output, session) {
     id_data <- medal_data %>%
-      dplyr::filter(Year == 0) %>%
-      dplyr::select(Country, ISO3c)
+      filter(Year == 0) %>%
+      select(Country, ISO3c)
 
-    output$map <- renderLeaflet({
-      leaflet(
+    output$map <- leaflet$renderLeaflet({
+      leaflet$leaflet(
         data = map_data,
-        options = leafletOptions(
+        options = leaflet$leafletOptions(
           preferCanvas = TRUE,
           zoomControl = FALSE,
           minZoom = 2,
           attributionControl = TRUE
         )
       ) %>%
-        setView(lng = 10, lat = 25, zoom = 2) %>%
-        addProviderTiles(providers$CartoDB.VoyagerNoLabels,
-          options = providerTileOptions(
+        leaflet$setView(lng = 10, lat = 25, zoom = 2) %>%
+        leaflet$addProviderTiles(leaflet$providers$CartoDB.VoyagerNoLabels,
+          options = leaflet$providerTileOptions(
             updateWhenZooming = FALSE,
             updateWhenIdle = FALSE
           )
         ) %>%
-        addPolygons(
+        leaflet$addPolygons(
           layerId = ~ISO3c,
           color = "black",
           fillColor = "#e2e2e2",
@@ -59,7 +57,7 @@ server <- function(id, map_data, medal_data, event_podium, year) {
           popup = "",
           smoothFactor = 1,
           fillOpacity = 1,
-          highlightOptions = highlightOptions(
+          highlightOptions = leaflet$highlightOptions(
             color = "white",
             weight = 2,
             dashArray = "",
@@ -67,8 +65,8 @@ server <- function(id, map_data, medal_data, event_podium, year) {
             bringToFront = FALSE
           )
         ) %>%
-        addEasyButton(
-          easyButton(
+        leaflet$addEasyButton(
+          leaflet$easyButton(
             position = "topleft",
             icon = "ion-arrow-shrink",
             title = "Reset location",
@@ -78,14 +76,14 @@ server <- function(id, map_data, medal_data, event_podium, year) {
         onRender(
           JS("function(el, x) {var map = this; map._initialCenter = map.getCenter(); map._initialZoom = map.getZoom();}") # nolint
         ) %>%
-        addLegend("bottomleft",
+        leaflet$addLegend("bottomleft",
           layerId = "legend_np",
           colors = "#e2e2e2",
           labels = "Non-participating"
         ) %>%
-        addLayersControl(
+        leaflet$addLayersControl(
           overlayGroups = c("Medal Count", "Event Medals"),
-          options = layersControlOptions(collapsed = FALSE)
+          options = leaflet$layersControlOptions(collapsed = FALSE)
         )
     })
 
@@ -94,21 +92,21 @@ server <- function(id, map_data, medal_data, event_podium, year) {
     })
     marker_data <- eventReactive(event_podium$podium_data(), {
       event_podium$podium_data() %>%
-        mutate(popup_base = glue("<strong>{Country}</strong><br>{Sport} - {Event_short}<br>"),
-               popup = case_when(
-                 Year != 0 ~ glue("{popup_base}{Game}"),
-          TRUE ~ glue("{popup_base}Rank <b>#{-1*(y)+ 4}</b> - Most gold medals won overall")
-        )) %>%
-        left_join(., map_data %>% dplyr::select(ISO3c, cnt_LON, cnt_LAT),
-                  by = "ISO3c"
-        )
+        mutate(
+          popup_base = glue("<strong>{Country}</strong><br>{Sport} - {Event_short}<br>"),
+          popup = case_when(
+            Year != 0 ~ glue("{popup_base}{Game}"),
+            TRUE ~ glue("{popup_base}Rank <b>#{-1*(y)+ 4}</b> - Most gold medals won overall")
+          )
+        ) %>%
+        left_join(., map_data %>% select(ISO3c, cnt_LON, cnt_LAT), by = "ISO3c")
     })
     observeEvent(marker_data(), ignoreInit = TRUE, {
       update_markers("map", marker_data())
     })
     observeEvent(event_podium$selected_podium_flag(), {
       marker_data() %>%
-        dplyr::filter(x == event_podium$selected_podium_flag()) %>%
+        filter(x == event_podium$selected_podium_flag()) %>%
         zoom_in_country(., map_id = "map", zoom = 4)
     })
   })

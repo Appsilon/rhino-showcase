@@ -1,29 +1,15 @@
 box::use(
-  shiny[testServer],
-  testthat[...],
-  waiter[waiter_preloader],
-  shiny[img, div, br, tagList],
   shiny.semantic[dropdown_input],
-  glue[glue],
-  plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
-  magrittr[`%>%`],
-  dplyr[n, select, mutate],
-  purrr[map, pmap]
+  shiny[div, img, tagList],
+  testthat[...], # nolint
+  waiter[waiter_preloader],
 )
 
 box::use(
   app/logic/utils[
     loading_screen,
     make_dropdown,
-    update_timeline_colors,
-    customize_axes,
-    add_medal_trace,
-    add_podium_bar,
-    make_flag_data,
-    make_flags,
-    update_podium_flags,
-    reset_podium_flags
-  ]
+  ],
 )
 
 # loading_screen --------------------------------------------------------------

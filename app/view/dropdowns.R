@@ -1,12 +1,12 @@
 box::use(
-  shiny[moduleServer, observeEvent, NS, reactive, is.reactive, h4, div],
-  shiny.semantic[flow_layout, update_dropdown_input, vertical_layout],
   dplyr[distinct, filter, pull],
-  magrittr[`%>%`]
+  magrittr[`%>%`],
+  shiny.semantic[update_dropdown_input, vertical_layout],
+  shiny[div, h4, is.reactive, moduleServer, NS, observeEvent, reactive],
 )
 
 box::use(
-  app/logic/utils[make_dropdown]
+  app/logic/utils[make_dropdown],
 )
 
 #' @export
@@ -31,7 +31,7 @@ server <- function(id, sports_by_year, year) {
 
     observeEvent(year(), {
       sport_choices <- sports_by_year %>%
-        dplyr::filter(Year == year()) %>%
+        filter(Year == year()) %>%
         distinct(Sport) %>%
         pull(Sport)
 
@@ -45,8 +45,8 @@ server <- function(id, sports_by_year, year) {
 
     observeEvent(input$Sport, {
       events_by_sport <- sports_by_year %>%
-        dplyr::filter(Year == year()) %>%
-        dplyr::filter(Sport == input$Sport) %>%
+        filter(Year == year()) %>%
+        filter(Sport == input$Sport) %>%
         distinct(Event, Event_short)
 
       default_event <- "Select an event"
