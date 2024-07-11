@@ -2,10 +2,7 @@ box::use(
   dplyr[bind_rows, select, filter, mutate, case_when, setdiff],
   glue[glue],
   magrittr[`%>%`],
-  leaflet[
-    colorNumeric, popupOptions, leafletProxy, setView, removePopup,
-    addLegend, addCircleMarkers, clearGroup, markerClusterOptions, clearPopups,
-  ],
+  leaflet,
 )
 
 box::use(
@@ -29,7 +26,7 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
                                          {n_bronze} bronze medals"),
         TRUE ~ glue("<b>{Country}</b><br>did not win any medals")
       ),
-      color = colorNumeric("RdPu", domain = n_total)(n_total)
+      color = leaflet$colorNumeric("RdPu", domain = n_total)(n_total)
     ) %>%
     select(Country, ISO3c, popup, color, n_total)
 
@@ -46,9 +43,9 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
       )
   )
 
-  leafletProxy(map_id, data = full_data) %>%
-    removePopup(map_data$ISO3c) %>%
-    setView(lng = 10, lat = 25, zoom = 2) %>%
+  leaflet$leafletProxy(map_id, data = full_data) %>%
+    leaflet$removePopup(map_data$ISO3c) %>%
+    leaflet$setView(lng = 10, lat = 25, zoom = 2) %>%
     set_shape_style(
       layer_id = ~ISO3c,
       color = "black",
@@ -58,7 +55,7 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
     set_shape_popup(
       layer_id = ~ISO3c,
       popup = ~popup,
-      options = popupOptions(
+      options = leaflet$popupOptions(
         style = list(
           "font-weight" = "normal",
           padding = "2px 5px"
@@ -67,9 +64,9 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
         direction = "top"
       )
     ) %>%
-    addLegend("bottomleft",
+    leaflet$addLegend("bottomleft",
       layerId = "legend",
-      pal = colorNumeric("RdPu", domain = year_map_data$n_total),
+      pal = leaflet$colorNumeric("RdPu", domain = year_map_data$n_total),
       values = range(year_map_data$n_total),
       title = "Number of medals"
     )
@@ -80,12 +77,12 @@ update_markers <- function(map_id, marker_data) {
   stopifnot(is.character(map_id))
   stopifnot(is.data.frame(marker_data))
 
-  leafletProxy(map_id, data = marker_data) %>%
-    clearPopups() %>%
-    clearGroup(group = "Event Medals") %>%
-    setView(lng = 10, lat = 25, zoom = 2) %>%
-    addCircleMarkers(
-      clusterOptions = markerClusterOptions(spiderfyOnMaxZoom = TRUE),
+  leaflet$leafletProxy(map_id, data = marker_data) %>%
+    leaflet$clearPopups() %>%
+    leaflet$clearGroup(group = "Event Medals") %>%
+    leaflet$setView(lng = 10, lat = 25, zoom = 2) %>%
+    leaflet$addCircleMarkers(
+      clusterOptions = leaflet$markerClusterOptions(spiderfyOnMaxZoom = TRUE),
       ~cnt_LON, ~cnt_LAT,
       group = "Event Medals",
       popup = ~popup,
@@ -108,6 +105,6 @@ zoom_in_country <- function(data, map_id, zoom) {
     lng <- data$cnt_LON
     lat <- data$cnt_LAT
   }
-  leafletProxy(map_id) %>%
-    setView(lng = lng, lat = lat, zoom = zoom)
+  leaflet$leafletProxy(map_id) %>%
+    leaflet$setView(lng = lng, lat = lat, zoom = zoom)
 }

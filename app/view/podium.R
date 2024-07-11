@@ -1,8 +1,5 @@
 box::use(
-  shiny[
-    moduleServer, NS, div, is.reactive, HTML, reactive,
-    observeEvent, eventReactive, renderText, textOutput,
-  ],
+  shiny,
   shiny.semantic[card],
   plotly[...],
   dplyr[filter, left_join, pull, first],
@@ -15,30 +12,30 @@ box::use(
 
 #' @export
 ui <- function(id) {
-  ns <- NS(id)
-  card(class = "fluid", div(
+  ns <- shiny$NS(id)
+  card(class = "fluid", shiny$div(
     class = "content",
-    div(class = "header", textOutput(ns("card_title"))),
-    div(
+    shiny$div(class = "header", shiny$textOutput(ns("card_title"))),
+    shiny$div(
       class = "description",
-      div(class = "ui divider"),
+      shiny$div(class = "ui shiny$divider"),
       plotlyOutput(ns("podium"), height = "100")
     ),
-    div(
+    shiny$div(
       class = "meta",
-      div(class = "ui divider"),
-      HTML("<i>Missing flags correspond to countries that no longer exist.</i>")
+      shiny$div(class = "ui shiny$divider"),
+      shiny$HTML("<i>Missing flags correspond to countries that no longer exist.</i>")
     )
   ))
 }
 
 #' @export
 server <- function(id, events_data, year, event_sport) {
-  stopifnot(is.reactive(year))
+  stopifnot(shiny$is.reactive(year))
   stopifnot(is.list(event_sport))
   stopifnot(is.data.frame(events_data))
 
-  moduleServer(id, function(input, output, session) {
+  shiny$moduleServer(id, function(input, output, session) {
     flag_pos <- data.frame(
       x = c(3, 2, 1),
       y = c(1, 3, 2),
@@ -70,27 +67,27 @@ server <- function(id, events_data, year, event_sport) {
         )
     })
 
-    event_podium <- eventReactive(event_sport$event(), {
+    event_podium <- shiny$eventReactive(event_sport$event(), {
       podium_data %>%
         filter(Year == year(), Event == event_sport$event()) %>%
         arrange(Medal)
     })
 
-    observeEvent(event_sport$sport(), {
+    shiny$observeEvent(event_sport$sport(), {
       reset_podium_flags("podium", session, n_flags)
     })
 
-    observeEvent(event_podium(), {
+    shiny$observeEvent(event_podium(), {
       update_podium_flags("podium", session, event_podium())
 
-      output$card_title <- renderText({
+      output$card_title <- shiny$renderText({
         this_event <- event_podium() %>%
           pull(Event_short) %>%
           first(.)
         ifelse(is.na(this_event), "Select an event", this_event)
       })
     })
-    list(selected_podium_flag = reactive(event_data("plotly_click", source = "podium")$x),
+    list(selected_podium_flag = shiny$reactive(event_data("plotly_click", source = "podium")$x),
          podium_data = event_podium)
   })
 }
