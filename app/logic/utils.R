@@ -1,13 +1,12 @@
 box::use(
   checkmate[assert_string, assert_vector],
   waiter[waiter_preloader],
-  shiny[img, div, br, tagList],
+  shiny[img, div, tagList],
   shiny.semantic[dropdown_input],
-  glue[glue],
   plotly[add_trace, add_bars, layout, config, plotlyProxy, plotlyProxyInvoke],
   magrittr[`%>%`],
   dplyr[n, select, mutate],
-  purrr[map, pmap]
+  purrr[pmap]
 )
 
 #' @export

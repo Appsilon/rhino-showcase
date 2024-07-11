@@ -1,10 +1,8 @@
 box::use(
-  shiny[moduleServer, NS, reactive, div, is.reactive, observeEvent, eventReactive],
+  shiny[moduleServer, NS, is.reactive, observeEvent, eventReactive],
   leaflet[...],
-  shiny.semantic[card, segment],
   htmlwidgets[onRender, JS],
   dplyr[filter, select, left_join, case_when, mutate],
-  purrr[map],
   magrittr[`%>%`],
   glue[glue]
 )

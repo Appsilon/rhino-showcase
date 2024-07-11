@@ -1,10 +1,9 @@
 box::use(
-  dplyr[bind_rows, select, filter, mutate, case_when, setdiff, left_join],
-  purrr[map_dbl],
+  dplyr[bind_rows, select, filter, mutate, case_when, setdiff],
   glue[glue],
   magrittr[`%>%`],
   leaflet[
-    colorNumeric, popupOptions, leafletProxy, setView, addPolygons, removePopup,
+    colorNumeric, popupOptions, leafletProxy, setView, removePopup,
     addLegend, addCircleMarkers, clearGroup, markerClusterOptions, clearPopups
   ]
 )

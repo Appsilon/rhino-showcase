@@ -1,12 +1,11 @@
 box::use(
   shiny[
-    moduleServer, NS, div, tagList, h3, reactive, img,
-    eventReactive, observeEvent, reactiveVal
+    moduleServer, NS, div, reactive,
+    observeEvent, reactiveVal
   ],
   shiny.semantic[card, cards],
   plotly[...],
   dplyr[mutate, pull],
-  glue[glue],
   magrittr[`%>%`]
 )
 

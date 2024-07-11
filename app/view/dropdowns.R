@@ -1,6 +1,6 @@
 box::use(
   shiny[moduleServer, observeEvent, NS, reactive, is.reactive, h4, div],
-  shiny.semantic[flow_layout, update_dropdown_input, vertical_layout],
+  shiny.semantic[update_dropdown_input, vertical_layout],
   dplyr[distinct, filter, pull],
   magrittr[`%>%`]
 )

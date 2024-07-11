@@ -1,6 +1,6 @@
 box::use(
   shiny[...],
-  shiny.semantic[icon, header, card, cards, segment],
+  shiny.semantic[header, card, cards, segment],
   dplyr[filter],
   magrittr[`%>%`]
 )

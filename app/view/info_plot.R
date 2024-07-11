@@ -1,5 +1,5 @@
 box::use(
-  shiny[moduleServer, NS, is.reactive, reactive, eventReactive, observeEvent, div],
+  shiny[moduleServer, NS, is.reactive, reactive, observeEvent, div],
   shiny.semantic[card],
   plotly[...],
   dplyr[filter, slice_head],

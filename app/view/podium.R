@@ -5,7 +5,7 @@ box::use(
   ],
   shiny.semantic[card],
   plotly[...],
-  dplyr[filter, select, left_join, mutate, pull, first],
+  dplyr[filter, left_join, pull, first],
   magrittr[`%>%`]
 )
 

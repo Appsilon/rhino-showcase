@@ -1,7 +1,7 @@
 box::use(
   fst[read_fst],
   sf[st_read],
-  shiny[moduleServer, NS, tags],
+  shiny[moduleServer, NS],
   shiny.semantic[grid, grid_template, semanticPage],
   waiter[use_waiter],
 )
