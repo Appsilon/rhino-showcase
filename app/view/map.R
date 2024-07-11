@@ -29,8 +29,8 @@ server <- function(id, map_data, medal_data, event_podium, year) {
 
   moduleServer(id, function(input, output, session) {
     id_data <- medal_data %>%
-      dplyr::filter(Year == 0) %>%
-      dplyr::select(Country, ISO3c)
+      filter(Year == 0) %>%
+      select(Country, ISO3c)
 
     output$map <- renderLeaflet({
       leaflet(
@@ -99,7 +99,7 @@ server <- function(id, map_data, medal_data, event_podium, year) {
                  Year != 0 ~ glue("{popup_base}{Game}"),
           TRUE ~ glue("{popup_base}Rank <b>#{-1*(y)+ 4}</b> - Most gold medals won overall")
         )) %>%
-        left_join(., map_data %>% dplyr::select(ISO3c, cnt_LON, cnt_LAT),
+        left_join(., map_data %>% select(ISO3c, cnt_LON, cnt_LAT),
                   by = "ISO3c"
         )
     })
@@ -108,7 +108,7 @@ server <- function(id, map_data, medal_data, event_podium, year) {
     })
     observeEvent(event_podium$selected_podium_flag(), {
       marker_data() %>%
-        dplyr::filter(x == event_podium$selected_podium_flag()) %>%
+        filter(x == event_podium$selected_podium_flag()) %>%
         zoom_in_country(., map_id = "map", zoom = 4)
     })
   })

@@ -33,7 +33,7 @@ server <- function(id, year, medal_data) {
   moduleServer(id, function(input, output, session) {
     observeEvent(session$clientData, ignoreInit = FALSE, {
       year_medal_data <- medal_data %>%
-        dplyr::filter(Year == year()) %>%
+        filter(Year == year()) %>%
         slice_head(n = 5)
       output$info_plot <- renderPlotly({
         plot_ly(
@@ -57,7 +57,7 @@ server <- function(id, year, medal_data) {
 
     observeEvent(year(), ignoreInit = TRUE, {
       year_medal_data <- medal_data %>%
-        dplyr::filter(Year == year()) %>%
+        filter(Year == year()) %>%
         slice_head(n = 5)
 
       plotlyProxy("info_plot", session) %>%

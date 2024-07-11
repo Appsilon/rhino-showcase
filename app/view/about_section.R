@@ -77,7 +77,7 @@ empty_card <- function() {
       href = "https://shiny.tools/#rhino",
       target = "_blank",
       rel = "noopener noreferrer",
-      shiny::icon("arrow-circle-right"),
+      icon("arrow-circle-right"),
       div(
         class = "card-empty-caption",
         "More Appsilon Technologies"
@@ -123,7 +123,7 @@ ui <- function(id) {
     div(
       id = "info",
       class = "info",
-      shiny::icon("info-circle")
+      icon("info-circle")
     ),
     tags$script(
       HTML(

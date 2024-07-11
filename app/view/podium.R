@@ -72,7 +72,7 @@ server <- function(id, events_data, year, event_sport) {
 
     event_podium <- eventReactive(event_sport$event(), {
       podium_data %>%
-        dplyr::filter(Year == year(), Event == event_sport$event()) %>%
+        filter(Year == year(), Event == event_sport$event()) %>%
         arrange(Medal)
     })
 
@@ -86,7 +86,7 @@ server <- function(id, events_data, year, event_sport) {
       output$card_title <- renderText({
         this_event <- event_podium() %>%
           pull(Event_short) %>%
-          dplyr::first(.)
+          first(.)
         ifelse(is.na(this_event), "Select an event", this_event)
       })
     })

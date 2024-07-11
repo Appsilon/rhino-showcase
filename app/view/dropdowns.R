@@ -31,7 +31,7 @@ server <- function(id, sports_by_year, year) {
 
     observeEvent(year(), {
       sport_choices <- sports_by_year %>%
-        dplyr::filter(Year == year()) %>%
+        filter(Year == year()) %>%
         distinct(Sport) %>%
         pull(Sport)
 
@@ -45,8 +45,8 @@ server <- function(id, sports_by_year, year) {
 
     observeEvent(input$Sport, {
       events_by_sport <- sports_by_year %>%
-        dplyr::filter(Year == year()) %>%
-        dplyr::filter(Sport == input$Sport) %>%
+        filter(Year == year()) %>%
+        filter(Sport == input$Sport) %>%
         distinct(Event, Event_short)
 
       default_event <- "Select an event"

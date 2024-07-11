@@ -108,7 +108,7 @@ make_flag_data <- function(data) {
       x = 0, xref = "x",
       y = seq(1, n())
     ) %>%
-    dplyr::select(flag64, x, y) %>%
+    select(flag64, x, y) %>%
     pmap(., make_flags)
 }
 
@@ -129,7 +129,7 @@ make_flags <- function(flag64, x = 0, y = 0,
 #' @export
 update_podium_flags <- function(plot_id, session, data) {
   flag_data <- data %>%
-    dplyr::select(flag64, x, y) %>%
+    select(flag64, x, y) %>%
     mutate(
       xref = "x", sizex = 1.2, xanchor = "center",
       yref = "y", sizey = 1, yanchor = "bottom", y = y + 0.5

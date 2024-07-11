@@ -37,7 +37,7 @@ server <- function(id, year, game_data) {
 
     observeEvent(year(), {
       this_game_data <- game_data %>%
-        dplyr::filter(Year == year())
+        filter(Year == year())
 
       output$info_title <- renderText(
         ifelse(year() == 0, "All Olympic Games", this_game_data$Game)

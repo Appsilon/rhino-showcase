@@ -21,7 +21,7 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
   stopifnot(is.numeric(year))
 
   year_map_data <- medal_data %>%
-    dplyr::filter(Year == year) %>%
+    filter(Year == year) %>%
     mutate(
       popup = case_when(
         n_total > 0 ~ glue("<b>{Country}</b> won {n_total} medals:<br>
@@ -32,14 +32,14 @@ update_polygon_colors <- function(map_id, id_data, medal_data, year, map_data) {
       ),
       color = colorNumeric("RdPu", domain = n_total)(n_total)
     ) %>%
-    dplyr::select(Country, ISO3c, popup, color, n_total)
+    select(Country, ISO3c, popup, color, n_total)
 
   non_participating <- setdiff(id_data$ISO3c, year_map_data$ISO3c)
 
   full_data <- bind_rows(
     year_map_data,
     id_data %>%
-      dplyr::filter(ISO3c %in% non_participating) %>%
+      filter(ISO3c %in% non_participating) %>%
       mutate(
         color = "#e2e2e2",
         popup = glue("<b>{Country}</b><br>did not participate"),
